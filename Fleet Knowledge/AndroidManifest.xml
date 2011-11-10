@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andrios.fleetknowledge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".Controllers.FleetKnowledgeActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+             <activity  android:name=".Controllers.RecruitersQuestionsController" > </activity>
+             <activity  android:name=".Controllers.RecruitersQuestionsDetailsController" > </activity>
+             <activity  android:name=".Controllers.RecceController" > </activity>
+             <activity  android:name=".Controllers.MusicController" > </activity>
+             <activity  android:name=".Controllers.CreedsController" > </activity>
+             <activity  android:name=".Controllers.CreedsDetailsController" > </activity>
+             <activity  android:name=".Controllers.ToolsController" > </activity>
+             <activity  android:name=".Controllers.RecruitersController" > </activity>
+    </application>
+
+</manifest>
