@@ -27,6 +27,8 @@
         
              <activity  android:name=".Controllers.RecruitersQuestionsController" > </activity>
              <activity  android:name=".Controllers.RecruitersQuestionsDetailsController" > </activity>
+             <activity  android:name=".Controllers.RecceShipsController" > </activity>
+             <activity  android:name=".Controllers.RecceShipsDetailsController" > </activity>
              <activity  android:name=".Controllers.RecceController" > </activity>
              <activity  android:name=".Controllers.MusicController" > </activity>
              <activity  android:name=".Controllers.CreedsController" > </activity>

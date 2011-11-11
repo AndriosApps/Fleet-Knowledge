@@ -1,32 +1,24 @@
 package com.andrios.fleetknowledge.Controllers;
 
 
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
-
-import org.apache.http.util.ByteArrayBuffer;
 
 import com.andrios.fleetknowledge.R;
 
 import android.app.Activity;
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.TableRow;
 import android.widget.Toast;
@@ -77,6 +69,7 @@ public class MusicController extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.musicview);
         
         setConnections();
@@ -402,7 +395,10 @@ private void open(String filename, final View v){
 	
 	public void onPause(){
 		super.onPause();
-		mp.release();
+		if(mp != null){
+			mp.release();
+			
+		}
 	}
 
 	

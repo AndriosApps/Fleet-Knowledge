@@ -11,7 +11,7 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
 	
 	//Database Creation SQL statement
 	private static final String QUESTIONS_CREATE = "create table questions (_id integer primary key autoincrement, question text not null, isAsked int not null, answer text not null);";
-	private static final String SHIPS_CREATE = "create table ships (_id integer primary key autoincrement, question text not null, isAsked int not null);";
+	private static final String SHIPS_CREATE = "create table ships (_id integer primary key autoincrement, type text not null, ship_class text not null, dimensions text not null, crew text not null, weapons text not null, performance text not null, propulsion text not null, about text not null);";
 	private static final String CREEDS_CREATE = "create table creeds (_id integer primary key autoincrement, title text not null, body text not null, isKnown int not null);";
 
 	public AndriosDatabaseHelper(Context context) {
@@ -24,7 +24,7 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
 		db.execSQL(QUESTIONS_CREATE);
 
 		db.execSQL(CREEDS_CREATE);
-		//db.execSQL(SHIPS_CREATE);
+		db.execSQL(SHIPS_CREATE);
 	}
 
 	//Method is called during an upgrade of the database, eg. if you increase the 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="arleigh_burke_dimensions">Length:    505 ft (154 m) (Flights I and II)\n           509 ft (155 m) (Flight IIA)\n\nBeam: 	66 ft (20 m)
+\n\nDraft: 	30.5 ft (9.3 m)</string>
+   <string name="arleigh_burke_crew"> Flight I: 303 total\nFlight IIA: 23 officers, 300 enlisted</string>
+   <string name="arleigh_burke_weapons"> • 96 cell Mk 41 vertical launch system
+\n• BGM-109 Tomahawk
+\n• RGM-84 Harpoon SSM (not in Flight IIA units)[6]
+\n• RIM-66M Standard medium range SAM (has an ASuW mode)[citation needed]
+\n• RIM-161 Standard Ballistic missile defense missile for Aegis BMD (15 ships as of March 2009[7] )
+\n• RIM-162 ESSM SAM (DDG-79 onward)
+\n• RUM-139 Vertical Launch ASROC
+\n• RIM-174A Standard ERAM to be added in 2011
+\n• one 5 inch (127 mm/54) Mk-45 Mod 1/2 (lightweight gun) (DDG-51 through -80)
+\n• one 5 inch (127 mm/62) Mk-45 mod 4 (lightweight gun) (DDG-81 onwards)
+\n• two 20 mm Phalanx CIWS (DDG-51 through -84, one on several later units), two 25 mm bushmasters
+\n• two Mark 32 triple torpedo tubes (six Mk-46 or Mk-50 torpedoes, Mk-54 in the near future)</string>
+   <string name="arleigh_burke_performance"> Speed: In excess of 30 kn (56 km/h; 35 mph)
+\nRange: 	4,400 nmi (8,100 km) at 20 kn (37 km/h; 23 mph)</string>
+   <string name="arleigh_burke_propulsion"> 4 General Electric LM2500-30 gas turbines each generating 27,000 shp (20,000 kW);
+coupled to two shafts, each driving a five-bladed reversible controllable pitch propeller;
+Total output: 108,000 shp (81,000 kW)</string>
+   <string name="arleigh_burke_about">The Arleigh Burke class of guided missile destroyers (DDGs) is the United States Navy\'s first class of destroyer built around the Aegis combat system and the SPY-1D multi-function phased array radar. The class is named for Admiral Arleigh "31-Knot" Burke, the most famous American destroyer officer of World War II, and later Chief of Naval Operations. Admiral Burke was alive when the class leader, the USS Arleigh Burke, was commissioned.</string>
+   
+    </resources>

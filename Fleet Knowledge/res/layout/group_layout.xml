@@ -1,0 +1,18 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent" android:layout_height="45dip"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="30dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+        <TextView android:layout_width="fill_parent"
+                android:layout_height="45dip" android:paddingLeft="5dip"
+                android:paddingRight="5dip" android:textStyle="bold" android:textSize="17dip"
+                android:gravity="center_vertical" android:id="@+id/tvGroup"
+                android:text="Children" android:textColor="#ffCCCC22"></TextView>
+</LinearLayout>
