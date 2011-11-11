@@ -3,12 +3,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:gravity="center_vertical"
-        android:text="@string/app_name" />
+        android:text="@string/title_recognition"
+        android:textSize="22dp" />
 
     <TableLayout
         android:id="@+id/tableLayout1"
@@ -29,12 +30,13 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-
+
                 <Button
                     android:id="@+id/Button03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:text="@string/title_ships" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -44,12 +46,13 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-
+
                 <Button
                     android:id="@+id/Button04"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:text="@string/title_subs" />
+
             </LinearLayout>
         </TableRow>
 
@@ -67,12 +70,13 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-
+
                 <Button
                     android:id="@+id/Button01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:text="@string/title_aircraft" />
+
             </LinearLayout>
 
             <LinearLayout

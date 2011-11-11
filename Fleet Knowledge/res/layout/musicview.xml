@@ -3,130 +3,129 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:gravity="center_vertical"
-        android:text="@string/app_name" />
-
+        android:text="@string/title_music"
+        android:textSize="22dp" />
+
     <TableLayout
         android:id="@+id/tableLayout1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
 
         <TableRow
-            android:id="@+id/TableRow02"
+            android:id="@+id/musicViewAnchorsAweighTableRow"
             android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:gravity="center" >
+            android:layout_height="150dp"
+            android:layout_weight="0" >
 
-            <LinearLayout
-                android:id="@+id/LinearLayout04"
+            <TextView
+                android:id="@+id/textView1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <Button
-                    android:id="@+id/Button03"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout03"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <Button
-                    android:id="@+id/Button04"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-            </LinearLayout>
+                android:layout_height="50dp"
+                android:text="Anchors Aweigh"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
         <TableRow
-            android:id="@+id/TableRow01"
+            android:id="@+id/musicViewMarineHymnTableRow"
             android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:gravity="center" >
+            android:layout_height="150dp"
+            android:layout_weight="0" >
 
-            <LinearLayout
-                android:id="@+id/LinearLayout02"
+            <TextView
+                android:id="@+id/TextView01"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <Button
-                    android:id="@+id/Button01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <Button
-                    android:id="@+id/Button02"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-            </LinearLayout>
+                android:layout_height="50dp"
+                android:text="Marine&apos;s Hymn"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow1"
+            android:id="@+id/musicViewBlueGoldTableRow"
             android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:gravity="center" >
+            android:layout_height="150dp"
+            android:layout_weight="0" >
 
-            <LinearLayout
-                android:id="@+id/linearLayout1"
+            <TextView
+                android:id="@+id/TextView02"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
+                android:layout_height="50dp"
+                android:text="Navy Blue and Gold"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
 
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-            </LinearLayout>
+        <TableRow
+            android:id="@+id/musicViewAirCorpsTableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0" >
 
-            <LinearLayout
-                android:id="@+id/linearLayout2"
+            <TextView
+                android:id="@+id/TextView03"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
+                android:layout_height="50dp"
+                android:text="Air Corps  - On Navy Wings of Gold"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-            </LinearLayout>
+        <TableRow
+            android:id="@+id/musicViewSubmarinersTableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Submariners - Taker Her Down"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/musicViewSeabeesTableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Seabees - The Song of the Seabees"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/musicViewWavesTableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0" >
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Waves of the Navy"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/musicViewDestroyermenTableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0" >
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="The Destroyermen"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
     </TableLayout>
 
