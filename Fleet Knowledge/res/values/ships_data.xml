@@ -78,7 +78,302 @@ Speed: 	32.5 knots (60 km/h)
    <string name="ticonderoga_boats">2 Rigid hull inflatable boats</string>
    <string name="ticonderoga_about">The Ticonderoga class of missile cruisers is a class of warships in the United States Navy, first ordered and authorized in FY 1978. The class uses phased-array radar and was originally planned as a class of destroyers. However, the increased combat capability offered by the Aegis combat system and the AN/SPY-1 radar system was used to justify the change of the classification from DDG (guided missile destroyer) to CG (guided missile cruiser) shortly before the keels of Ticonderoga and Yorktown were laid down.</string>
    
+ 
+       <string name="enterprise_dimensions">Displacement: 	93,284 long tons (94,781 t) Full Load
+\nLength: 	1,123 ft (342 m)[3][4]
+\nBeam: 	
+\n  132.8 ft (40.5 m) (waterline)
+\n  257.2 ft (78.4 m) (extreme)
+\nDraft: 	39 ft (12 m)</string>
+   <string name="enterprise_crew">5,828 (maximum)
+\nShips company: 
+\n  3,000 (2,700 Sailors, 150 Chiefs, 150 Officers)
+\nAir wing: 
+\n  1,800 (250 Pilots, and 1,550 Support personnel)</string>
+   <string name="enterprise_weapons">2 × NATO Sea Sparrow launchers
+       \n2 × 20 mm Phalanx CIWS mounts
+    \n2 x RAM launchers
        
+   </string>
+   <string name="enterprise_performance">Speed: 	33.6 kn (38.7 mph; 62.2 km/h)
+\nRange: 	Unlimited distance
+\nEndurance: 20 years</string>
+   <string name="enterprise_propulsion">8 × Westinghouse A2W nuclear reactors
+\nfour sets Westinghouse geared steam turbines
+\n4 × shafts 280,000 shp (210 MW)</string>
+   <string name="enterprise_aircraft">Hold up to 90
+70 (normally)</string>
+   <string name="enterprise_ew">AN/SLQ-32
+\nMark 36 SRBOC</string>
+   <string name="enterprise_sensors">
+AN/SPS-48 3D air search radar
+\nAN/SPS-49 2D air search radar</string>
+   <string name="enterprise_boats"></string>
+   <string name="enterprise_about"></string>
+   
+       
+       
+       <string name="nimitz_dimensions">
+Displacement: 	100,000 to 104,600 long tons (100,000–106,300 t)
+\nLength: 	
+\n  Overall: 1,092 feet (332.8 m)
+\n  Waterline: 1,040 feet (317.0 m)
+\nBeam: 	
+\n  Overall: 252 ft (76.8 m)
+\n  Waterline: 134 ft (40.8 m)
+\nDraft: 	
+\n  Maximum navigational: 37 ft (11.3 m)
+\n  Limit: 41 ft (12.5 m)</string>
+   <string name="nimitz_crew">Ships company: 3,200
+\nAir wing: 2,480</string>
+   <string name="nimitz_weapons">    16–24 × Sea Sparrow or NATO Sea Sparrow missiles
+    \n3 or 4 × Phalanx CIWSs or RIM-116 Rolling Airframe Missiles
+       
+   </string>
+   <string name="nimitz_performance">Speed: 	30+ knots (56+ km/h; 35+ mph)
+\nRange: Unlimited distance
+\nEndurance: 20 years</string>
+   <string name="nimitz_propulsion">2 × Westinghouse A4W nuclear reactors
+\n4 × steam turbines
+\n4 × shafts
+\n260,000 shp (194 MW)</string>
+   <string name="nimitz_aircraft">85–90 fixed wing and helicopters</string>
+   <string name="nimitz_ew">SLQ-32A(V)4 Countermeasures suite
+\nSLQ-25A Nixie torpedo countermeasures</string>
+   <string name="nimitz_sensors">AN/SPS-48E 3-D air search radar
+\nAN/SPS-49(V)5 2-D air search radar
+\nAN/SPQ-9B target acquisition radar
+\nAN/SPN-46 air traffic control radars
+\nAN/SPN-43C air traffic control radar
+\nAN/SPN-41 landing aid radars
+\n4 × Mk 91 NSSM guidance systems
+\n4 × Mk 95 radars</string>
+   <string name="nimitz_boats"></string>
+   <string name="nimitz_about"></string>
+   
+       
+       
+       
+       <string name="ford_dimensions">Displacement:
+\n  100,000 long tons
+\n  101,600 tonnes
+\n  112,000 short tons
+\nLength: 	1,092 ft (333 m)
+\nBeam: 	
+\n  Flight deck: 252 ft (77 m) 
+\n  Waterline: 134 ft (41 m)</string>
+   <string name="ford_crew">4,660</string>
+   <string name="ford_weapons"></string>
+   <string name="ford_performance"></string>
+   <string name="ford_propulsion"></string>
+   <string name="ford_aircraft">90 aircraft including:
+       \n  F-35 Lightning II
+       \n  F/A-18E/F Super Hornet
+       \n  EA-18G Growler
+       \n  E-2D Advanced Hawkeye
+       \n  C-2A Greyhound
+       \n  MH-60R/S Seahawk helicopters
+       \n  UAV X-47B.</string>
+   <string name="ford_ew">Unknown</string>
+   <string name="ford_sensors">Unknown</string>
+   <string name="ford_boats">Unknown</string>
+   <string name="ford_about">The Gerald R. Ford-class aircraft carriers (or Ford-class) are a class of supercarrier for the United States Navy, intended to eventually replace the current Nimitz-class carriers. The new vessels will use a hull design very similar to the Nimitz carriers in appearance, but many aspects of the design will be very different, implementing new technologies developed since the initial design of the previous class (such as the Electromagnetic Aircraft Launch System), as well as other design features intended to improve efficiency and running costs, including a reduced crew requirement.  The first hull of the line will be named Gerald R. Ford, and will have the hull number CVN-78.</string>
+
+       <string name="tarawa_dimensions">Displacement: 	39,967 tonnes (39,336 long tons; 44,056 short tons) full load
+\nLength: 	834 feet (254 m)
+\nBeam: 	131.9 feet (40.2 m)
+\nDraft: 	25.9 feet (7.9 m)</string>
+   <string name="tarawa_crew">
+       56 officers
+       \n874 sailors
+       \n1703 troops</string>
+   <string name="tarawa_weapons">Mark 49 RAM missile system
+\n2 x Vulcan Phalanx
+\n6 x 25 mm automatic cannons
+\n8 x 12.7 mm machine guns</string>
+   <string name="tarawa_performance">Speed: 	24 knots (44 km/h; 28 mph)
+\nRange: 	10,000 nautical miles (19,000 km; 12,000 mi) at 20 knots (37 km/h; 23 mph)</string>
+   <string name="tarawa_propulsion">2 x Combustion Engineering boilers
+\n2 x Westinghouse turbines
+\n70,000 horsepower (52,000 kW)
+\n2 x propeller shafts
+\n1 x bow thruster</string>
+   <string name="tarawa_aircraft">Up to 19 Sea Stallions
+\n26 Sea Knights, or mixed airgroup
+\n6 Harrier jump-jets (after modification)</string>
+   <string name="tarawa_ew"></string>
+   <string name="tarawa_sensors"></string>
+   <string name="tarawa_boats">4 x LCU 1610
+\nOr two LCU and two LCM-8
+\nOr 17 LCM-6
+\nOr 45 LVT</string>
+   <string name="tarawa_about"></string>
+     
+       <string name="america_dimensions">Displacement: 	Approx. 45,000 long tons (45,700 metric tonnes) full load
+\nLength: 	844 feet (257.3 m)
+\nBeam: 	106 feet (32.3 m)</string>
+   <string name="america_crew">65 officers
+       \n994 enlisted
+ 	   \n1,687 Marines (plus 184 surge)</string>
+   <string name="america_weapons">2× Rolling Airframe Missile launchers
+\n2× Evolved Sea Sparrow Missile launchers
+\n2× 20 mm Phalanx CIWS mounts
+\n7× twin .50 BMG machine guns</string>
+   <string name="america_performance">Speed: 	20+ knots</string>
+   <string name="america_propulsion">Two marine gas turbines
+\ntwo shafts, 70,000 total brake horsepower
+\ntwo 5,000 hp (3,700 kW) auxiliary propulsion motors.</string>
+   <string name="america_aircraft">F-35B Lightning II
+\nMV-22B Osprey
+\nCH-53E Super Stallion or
+\nCH-53K Super Stallion
+\nUH-1Y Venom
+\nAH-1Z Viper
+\nMH-60S Seahawk</string>
+   <string name="america_ew"></string>
+   <string name="america_sensors"></string>
+   <string name="america_boats"></string>
+   <string name="america_about"></string>
+   
+       
+       <string name="wasp_dimensions">Displacement: 	41,150 t (40,500 long tons; 45,360 short tons) full load
+\nLength: 	253.2 m (831 ft)
+\nBeam: 	31.8 m (104 ft)
+\nDraft: 	8.1 m (27 ft)</string>
+   <string name="wasp_crew">Complement: 	1,208
+       \nTroops: 	1,894 Marine Detachment</string>
+   <string name="wasp_weapons">	Two Rolling Airframe Missile launchers
+\nTwo Sea Sparrow missile launchers
+\nThree 20 mm Phalanx CIWS systems (LHD 5-7 with two)
+\nFour .50 BMG machine guns
+\nFour 25 mm Mk 38 chain guns (LHD 5-7 with three)</string>
+   <string name="wasp_performance">Speed: 	22 knots (41 km/h; 25 mph)
+\nRange: 	9,500 nautical miles (17,600 km; 10,900 mi) at 18 knots (33 km/h; 21 mph)</string>
+   <string name="wasp_propulsion">Two boilers
+       \ntwo geared steam turbines
+       \ntwo shafts
+       \n70,000 shaft-horsepower;
+       \n\nUSS Makin Island
+       \n  two General Electric LM2500 geared gas turbines
+       \n  two shafts</string>
+   <string name="wasp_aircraft">Standard Complement:
+\n  6 AV-8B Harrier II attack aircraft
+\n  4 AH-1W SuperCobra attack helicopter
+\n  12 CH-46 Sea Knight helicopters or 4+ MV-22 Osprey
+\n  4 CH-53 Sea Stallion helicopters
+\n  3-4 UH-1N Huey helicopters
+\nAssault:
+\n  42 CH-46 Sea Knight helicopters
+or
+\n  22+ MV-22 Osprey
+\nSea Control:
+\n  20 AV-8B Harrier II attack aircraft
+\n  6 SH-60F/HH-60H ASW helicopters</string>
+   <string name="wasp_ew"></string>
+   <string name="wasp_sensors"></string>
+   <string name="wasp_boats"></string>
+   <string name="wasp_about"></string>
+   
+       
+   <string name="san_antonio_dimensions">Displacement: 	24,900 t
+\nLength: 	684 ft (208 m)
+\nBeam: 	105 ft (32 m)
+\nDraft: 	23 ft (7.0 m), full load</string>
+   <string name="san_antonio_crew">Crew: 
+       \n  28 officers
+       \n  333 enlisted
+		\nLanding force: 
+		\n  66 officers
+		\n  633 enlisted</string>
+   <string name="san_antonio_weapons">2× Bushmaster II 30 mm Close in Guns
+\n2× Rolling Airframe Missile launchers
+\n2× Mk 41 8 Cell VLS for quad-packed ESSMs (if required)
+\nSeveral twin M2 Browning Machine Gun turrets</string>
+   <string name="san_antonio_performance">Speed: 	In excess of 22 knots (41 km/h)</string>
+   <string name="san_antonio_propulsion">Four sequentially turbocharged marine Colt-Pielstick diesel engines
+\ntwo shafts, 41,600 shp</string>
+   <string name="san_antonio_aircraft">Launch or land up to four CH-46 Sea Knight helicopters
+\nor up to two MV-22 Osprey tilt rotor aircraft simultaneously with room to spot four MV-22s on deck and one in the hangar</string>
+   <string name="san_antonio_ew"></string>
+   <string name="san_antonio_sensors"></string>
+   <string name="san_antonio_boats">2× LCACs (air cushion)
+\nor 1× LCU (conventional)
+\n 14× Expeditionary Fighting Vehicles/Amphibious Assault Vehicles</string>
+   <string name="san_antonio_about"></string>
+       
+       
+     <string name="austin_dimensions">Displacement: 	
+         \n  9,201 tons (light)
+\n  16,914 tons (full)
+\nLength: 	
+\n  548 ft (167 m) waterline
+\n  569 ft (173 m) overall
+\nBeam: 	
+\n  84 ft (26 m) waterline
+\n  105 ft (32 m) extreme
+\nDraft: 	
+\n  22 ft (6.7 m) navigational,
+\n  34 ft (10 m) ballasted</string>
+   <string name="austin_crew">24 officers\n396 enlisted\n900 marines</string>
+   <string name="austin_weapons">2 × 25 mm Mk 38 guns
+\n2 × Phalanx CIWS
+\n8 × .50-calibre machine guns</string>
+   <string name="austin_performance">21 knots (24 mph; 39 km/h)</string>
+   <string name="austin_propulsion">2 × boilers
+       \n2 × steam turbines
+\n2 × shafts, 24,000 shp (18,000 kW)</string>
+   <string name="austin_aircraft">Up to 6 CH-46 Sea Knight helicopters</string>
+   <string name="austin_ew"></string>
+   <string name="austin_sensors"></string>
+   <string name="austin_boats">1 × LCAC, or
+\n1 × LCU, or
+\n4 × LCM-8, or
+\n9 × LCM-6, or
+\n24 × AAV</string>
+   <string name="austin_about"></string>
+     
+   <string name="whidbey_island_dimensions">Displacement: 	16,100 tons
+\nLength: 	609 ft (186 m)
+\nBeam: 	84 ft (26 m)
+\nDraft: 	19 ft 6 in (5.0 m)</string>
+   <string name="whidbey_island_crew">22 officers
+\n391 enlisted
+\nMarine detachment: 500</string>
+   <string name="whidbey_island_weapons">2 × 25 mm Mk 38 cannons
+\n2 × 20 mm Phalanx CIWS mounts
+\n1 / 2 × Rolling Airframe Missile
+\n6 × .50 caliber M2HB machine guns</string>
+   <string name="whidbey_island_performance">20+ knots (37+ km/h)</string>
+   <string name="whidbey_island_propulsion">4 Colt Industries, 16-cylinder diesel engines
+\n2 shafts, 33,000 shp (25 MW)</string>
+   <string name="whidbey_island_aircraft">Large helicopter platform aft, no hangar</string>
+   <string name="whidbey_island_ew"></string>
+   <string name="whidbey_island_sensors"></string>
+   <string name="whidbey_island_boats">4 LCACs or 
+       \n21 LCM-6s or 
+       \n36 Amphibious Assault Vehicles AAV.</string>
+   <string name="whidbey_island_about"></string>
+   
+       
+       <string name="harpers_ferry_dimensions">Displacement: 	16,708 tons
+\nLength: 	609 ft (186 m)
+\nBeam: 	  84 ft (26 m)
+\nDraft: 	  21 ft (6.4 m)</string>
+   <string name="harpers_ferry_crew">22 officers\n391 enlisted</string>
+   <string name="harpers_ferry_weapons">2 × 25 mm Mk 38 cannons
+\n2 × 20 mm Phalanx CIWS mounts
+\n2 × RIM-116 Rolling Airframe Missile (RAM) launchers
+\n6 × .50 caliber M2HB machine guns</string>
+   <string name="harpers_ferry_performance">Speed: 	20+ knots (37 km/h)</string>
+   <string name="harpers_ferry_propulsion">	Four Colt Industries, 16-cylinder diesels
+\ntwo shafts, 33,000 shaft horsepower (25 MW)</string>
+   <string name="harpers_ferry_aircraft"></string>
+   <string name="harpers_ferry_ew"></string>
+   <string name="harpers_ferry_sensors"></string>
+   <string name="harpers_ferry_boats">2 LCACs</string>
+   <string name="harpers_ferry_about"></string>
+   
+    
        
        
 <string name="base_dimensions"></string>

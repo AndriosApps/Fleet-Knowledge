@@ -26,6 +26,7 @@ public class Ship implements Serializable{
 	String sensors;
 	String boats;
 	int image;
+	String link;
 	
 	public Ship(Cursor c, Context context){
 		type = c.getString(1);
@@ -41,6 +42,7 @@ public class Ship implements Serializable{
 		boats = c.getString(11);
 		about = c.getString(12);
 		image = context.getResources().getIdentifier(c.getString(13),"drawable", context.getPackageName());
+		link = c.getString(14);
 	}
 
 	public String getType() {
@@ -145,6 +147,14 @@ public class Ship implements Serializable{
 
 	public void setImage(int image) {
 		this.image = image;
+	}
+
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
 	}
 	
 	

@@ -6,6 +6,7 @@ import com.andrios.fleetknowledge.Models.Ship;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,6 +30,7 @@ public class RecceShipsDetailsController extends Activity {
 	TextView weaponsLBL;
 	TextView performanceLBL;
 	TextView propulsionLBL;
+	TextView moreInfoLBL;
 	LinearLayout header;
 	ViewFlipper flipper;
 	
@@ -80,6 +82,7 @@ public class RecceShipsDetailsController extends Activity {
 		aircraftLBL.setText(ship.getAircraft());
 		TextView boatsLBL = (TextView) findViewById(R.id.recceShipsDetailsViewBoatsLBL);
 		boatsLBL.setText(ship.getBoats());
+		moreInfoLBL = (TextView) findViewById(R.id.recceShipsDetailViewMoreInfoLBL);
 		
 		ImageView image = (ImageView) findViewById(R.id.recceShipsDetailsViewImageView);
 		image.setImageResource(ship.getImage());
@@ -99,6 +102,16 @@ public class RecceShipsDetailsController extends Activity {
 
 			public void onClick(View v) {
 				flipper.showNext();
+				
+			}
+			
+		});
+		
+		moreInfoLBL.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse(ship.getLink()));
+				startActivity(browserIntent);
 				
 			}
 			

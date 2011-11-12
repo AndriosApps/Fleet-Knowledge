@@ -138,7 +138,8 @@ public class RecceSubsController extends Activity {
 				 getResources().getString(R.string.ohio_sensors),
 				 getResources().getString(R.string.ohio_boats),     
 				 getResources().getString(R.string.ohio_about),
-				 "ohio");
+				 "ohio",
+				 "http://en.wikipedia.org/wiki/Ohio_class");
 		 
 		 mDbAdapter.createSub("Cruise Missile Submarine (SSGN)", 
 				 "Ohio Class", 
@@ -153,7 +154,8 @@ public class RecceSubsController extends Activity {
 				 getResources().getString(R.string.ohio_sensors),
 				 getResources().getString(R.string.ohio_boats),     
 				 getResources().getString(R.string.ohio_about),
-				 "ohio");
+				 "ohio",
+				 "http://en.wikipedia.org/wiki/Ohio_class");
 		
 		 mDbAdapter.createSub("Attack Submarine (SSN)", 
 				 "Virginia Class", 
@@ -168,7 +170,8 @@ public class RecceSubsController extends Activity {
 				 getResources().getString(R.string.virginia_sensors),
 				 getResources().getString(R.string.virginia_boats),     
 				 getResources().getString(R.string.virginia_about),
-				 "virginia");
+				 "virginia",
+				 "http://en.wikipedia.org/wiki/Virginia_class_submarine");
 		 
 		 mDbAdapter.createSub("Attack Submarine (SSN)", 
 				 "Seawolf Class", 
@@ -183,7 +186,8 @@ public class RecceSubsController extends Activity {
 				 getResources().getString(R.string.seawolf_sensors),
 				 getResources().getString(R.string.seawolf_boats),     
 				 getResources().getString(R.string.seawolf_about),
-				 "seawolf");
+				 "seawolf",
+				 "http://en.wikipedia.org/wiki/Seawolf_class_submarine");
 		
 		 mDbAdapter.createSub("Attack Submarine (SSN)", 
 				 "Los Angeles Class", 
@@ -198,7 +202,8 @@ public class RecceSubsController extends Activity {
 				 getResources().getString(R.string.los_angeles_sensors),
 				 getResources().getString(R.string.los_angeles_boats),     
 				 getResources().getString(R.string.los_angeles_about),
-				 "los_angeles");
+				 "los_angeles",
+				 "http://en.wikipedia.org/wiki/Los_Angeles_class_submarine");
 	 }
 	 
 	 
