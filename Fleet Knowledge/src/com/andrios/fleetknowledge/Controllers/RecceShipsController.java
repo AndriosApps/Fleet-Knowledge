@@ -95,7 +95,7 @@ public class RecceShipsController extends Activity {
 	    	cursor = mDbAdapter.fetchAllShips();
 	    	startManagingCursor(cursor);
 	    	
-	    	if(cursor.getCount() < 2){
+	    	if(cursor.getCount() < 1){
 	    		buildBaseShips();
 	    		fillData();
 	    		
@@ -104,7 +104,7 @@ public class RecceShipsController extends Activity {
 		    	cursor.moveToFirst();
 		    	shipList = new ArrayList<Ship>();
 		        while (cursor.isAfterLast() == false) {
-		            shipList.add(new Ship(cursor));
+		            shipList.add(new Ship(cursor, RecceShipsController.this));
 		       	    cursor.moveToNext();
 		        }
 		        cursor.close();
@@ -132,14 +132,30 @@ public class RecceShipsController extends Activity {
 
 				 getResources().getString(R.string.arleigh_burke_weapons), 
 				 getResources().getString(R.string.arleigh_burke_performance), 
-				 getResources().getString(R.string.arleigh_burke_propulsion), 
-				 getResources().getString(R.string.arleigh_burke_about));
-
-		 mDbAdapter.createShip("Guided Missile Cruiser (CG)", "Ticonderoga Class", "DIMENSION", "CREW", "WEAPONS", "PERFORMANCE", "PROPULSION", "ABOUT" );
-
-		 mDbAdapter.createShip("Aircraft Carrier, Nuclear (CVN)", "Nimitz Class", "DIMENSION", "CREW", "WEAPONS", "PERFORMANCE", "PROPULSION", "ABOUT" );
-		 mDbAdapter.createShip("Aircraft Carrier, Nuclear (CVN)", "Gerald R. Ford Class", "DIMENSION", "CREW", "WEAPONS", "PERFORMANCE", "PROPULSION", "ABOUT" );
+				 getResources().getString(R.string.arleigh_burke_propulsion),
+				 getResources().getString(R.string.arleigh_burke_aircraft), 
+				 getResources().getString(R.string.arleigh_burke_ew), 
+				 getResources().getString(R.string.arleigh_burke_sensors),
+				 getResources().getString(R.string.arleigh_burke_boats),     
+				 getResources().getString(R.string.arleigh_burke_about),
+				 "arleigh_burke");
 		 
+		 mDbAdapter.createShip("Guided Missile Cruiser (CG)", 
+				 "Ticonderoga Class", 
+				 getResources().getString(R.string.ticonderoga_dimensions), 
+				 getResources().getString(R.string.ticonderoga_crew), 
+
+				 getResources().getString(R.string.ticonderoga_weapons), 
+				 getResources().getString(R.string.ticonderoga_performance), 
+				 getResources().getString(R.string.ticonderoga_propulsion),
+				 getResources().getString(R.string.ticonderoga_aircraft), 
+				 getResources().getString(R.string.ticonderoga_ew), 
+				 getResources().getString(R.string.ticonderoga_sensors),
+				 getResources().getString(R.string.ticonderoga_boats),     
+				 getResources().getString(R.string.ticonderoga_about),
+				 "ticonderoga");
+
+		
 	 }
 	 
 	 

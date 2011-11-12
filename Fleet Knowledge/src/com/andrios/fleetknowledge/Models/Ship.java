@@ -2,7 +2,9 @@ package com.andrios.fleetknowledge.Models;
 
 import java.io.Serializable;
 
+import android.content.Context;
 import android.database.Cursor;
+import android.graphics.drawable.Drawable;
 
 public class Ship implements Serializable{
 
@@ -17,9 +19,15 @@ public class Ship implements Serializable{
 	String weapons;
 	String performance;
 	String propulsion;
+
 	String about;
+	String aircraft;
+	String ew;
+	String sensors;
+	String boats;
+	int image;
 	
-	public Ship(Cursor c){
+	public Ship(Cursor c, Context context){
 		type = c.getString(1);
 		ship_class = c.getString(2);
 		dimension = c.getString(3);
@@ -27,7 +35,12 @@ public class Ship implements Serializable{
 		weapons = c.getString(5);
 		performance = c.getString(6);
 		propulsion = c.getString(7);
-		about = c.getString(8);
+		aircraft = c.getString(8);
+		ew = c.getString(9);
+		sensors = c.getString(10);
+		boats = c.getString(11);
+		about = c.getString(12);
+		image = context.getResources().getIdentifier(c.getString(13),"drawable", context.getPackageName());
 	}
 
 	public String getType() {
@@ -92,6 +105,46 @@ public class Ship implements Serializable{
 
 	public void setAbout(String about) {
 		this.about = about;
+	}
+
+	public String getAircraft() {
+		return aircraft;
+	}
+
+	public void setAircraft(String aircraft) {
+		this.aircraft = aircraft;
+	}
+
+	public String getEw() {
+		return ew;
+	}
+
+	public void setEw(String ew) {
+		this.ew = ew;
+	}
+
+	public String getSensors() {
+		return sensors;
+	}
+
+	public void setSensors(String sensors) {
+		this.sensors = sensors;
+	}
+
+	public String getBoats() {
+		return boats;
+	}
+
+	public void setBoats(String boats) {
+		this.boats = boats;
+	}
+
+	public int getImage() {
+		return image;
+	}
+
+	public void setImage(int image) {
+		this.image = image;
 	}
 	
 	

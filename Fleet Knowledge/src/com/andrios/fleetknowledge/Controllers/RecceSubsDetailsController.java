@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-public class RecceShipsDetailsController extends Activity {
+public class RecceSubsDetailsController extends Activity {
 	
 
 	Ship ship;
@@ -50,7 +50,7 @@ public class RecceShipsDetailsController extends Activity {
 
 	private void getExtras() {
 		Intent intent = this.getIntent();
-		ship = (Ship) intent.getSerializableExtra("ship");
+		ship = (Ship) intent.getSerializableExtra("sub");
 		
 	}
 
@@ -80,7 +80,6 @@ public class RecceShipsDetailsController extends Activity {
 		aircraftLBL.setText(ship.getAircraft());
 		TextView boatsLBL = (TextView) findViewById(R.id.recceShipsDetailsViewBoatsLBL);
 		boatsLBL.setText(ship.getBoats());
-		
 		ImageView image = (ImageView) findViewById(R.id.recceShipsDetailsViewImageView);
 		image.setImageResource(ship.getImage());
 		

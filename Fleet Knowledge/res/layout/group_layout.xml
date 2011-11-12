@@ -9,10 +9,17 @@
         android:orientation="vertical" >
 
     </LinearLayout>
-
-        <TextView android:layout_width="fill_parent"
-                android:layout_height="45dip" android:paddingLeft="5dip"
-                android:paddingRight="5dip" android:textStyle="bold" android:textSize="17dip"
-                android:gravity="center_vertical" android:id="@+id/tvGroup"
-                android:text="Children" android:textColor="#ffCCCC22"></TextView>
+
+        <TextView
+            android:id="@+id/tvGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="Children"
+            android:textColor="@color/tactical_green"
+            android:textSize="17dip"
+            android:textStyle="bold" >
+</TextView>
 </LinearLayout>

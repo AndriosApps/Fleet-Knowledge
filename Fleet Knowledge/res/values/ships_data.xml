@@ -21,6 +21,75 @@
    <string name="arleigh_burke_propulsion"> 4 General Electric LM2500-30 gas turbines each generating 27,000 shp (20,000 kW);
 coupled to two shafts, each driving a five-bladed reversible controllable pitch propeller;
 Total output: 108,000 shp (81,000 kW)</string>
+   <string name="arleigh_burke_aircraft">• None on Flights I and II, but LAMPS III electronics installed on landing deck for coordinated DDG-51/helo ASW operations
+\n• Flight IIA onwards, two MH-60R Seahawk LAMPS III helicopters</string>
+   <string name="arleigh_burke_ew">
+• AN/SLQ-32(V)2 Electronic Warfare System
+\n• AN/SLQ-25 Nixie Torpedo Countermeasures
+\n• MK 36 MOD 12 Decoy Launching System
+\n• AN/SLQ-39 CHAFF Buoys</string>
+   <string name="arleigh_burke_sensors">• AN/SPY-1D 3D Radar
+\n• AN/SPS-67(V)2 Surface Search Radar
+\n• AN/SPS-73(V)12 Surface Search Radar
+\n• AN/SQS-53C Sonar Array
+\n• AN/SQR-19 Tactical Towed Array Sonar
+\n• AN/SQQ-28 LAMPS III Shipboard System</string>
+   <string name="arleigh_burke_boats">2 Rigid hull inflatable boats</string>
    <string name="arleigh_burke_about">The Arleigh Burke class of guided missile destroyers (DDGs) is the United States Navy\'s first class of destroyer built around the Aegis combat system and the SPY-1D multi-function phased array radar. The class is named for Admiral Arleigh "31-Knot" Burke, the most famous American destroyer officer of World War II, and later Chief of Naval Operations. Admiral Burke was alive when the class leader, the USS Arleigh Burke, was commissioned.</string>
+   
+       
+<string name="ticonderoga_dimensions">Displacement: 	Approx. 9,600 long tons (9,800 t) full load
+\nLength: 	567 feet (173 m)
+\nBeam: 	55 feet (16.8 meters)
+\nDraft: 	34 feet (10.2 meters)</string>
+   <string name="ticonderoga_crew">33 officers\n27 Chief Petty Officers\n340 enlisted</string>
+   <string name="ticonderoga_weapons">	
+\n2 × 61 cell Mk 41 vertical launch systems
+\n122 × Mix of RIM-66M-5 Standard SM-2MR Block IIIB, RIM-156A SM-2ER Block IV, RIM-161 SM-3, RIM-162A ESSM, RIM-174A Standard ERAM, BGM-109 Tomahawk, or RUM-139A VL-ASROC
+\n8 × RGM-84 Harpoon missiles
+\n2 × Mk 45 Mod 2 5 in / 54 cal lightweight gun
+\n2 × 25 mm Mk 38 gun
+\n2–4 × .50 cal (12.7 mm) gun
+\n2 × Phalanx CIWS Block 1B
+\n2 × Mk 32 12.75 in (324 mm) triple torpedo tubes for lightweight torpedoes</string>
+   <string name="ticonderoga_performance">
+Speed: 	32.5 knots (60 km/h)
+\nRange: 	
+\n  6,000 nmi (11,000 km) at 20 kn (37 km/h); 
+\n  3,300 nmi (6,100 km) at 30 kn (56 km/h).</string>
+   <string name="ticonderoga_propulsion">
+       4 × General Electric LM2500 gas turbine engines, 80,000 shaft horsepower (60,000 kW)
+\n2 × controllable-reversible pitch propellers
+\n2 × rudders</string>
+   <string name="ticonderoga_aircraft">2 × Sikorsky SH-60B or MH-60R Seahawk LAMPS III helicopters.</string>
+   <string name="ticonderoga_ew"></string>
+   <string name="ticonderoga_sensors">
+\nAN/SPY-1A/B multi-function radar
+\nAN/SPS-49 air search radar
+\nAN/SPG-62 fire control radar
+\nAN/SPS-73 surface search radar
+\nAN/SPQ-9 gun fire control radar
+\nAN/SQQ-89(V)3 Sonar suite, consisting of
+\n  AN/SQS-53B/C/D active sonar
+\n  AN/SQR-19 TACTAS passive sonar
+\n  AN/SQQ-28 light airborne multi-purpose system
+       
+   </string>
+   <string name="ticonderoga_boats">2 Rigid hull inflatable boats</string>
+   <string name="ticonderoga_about">The Ticonderoga class of missile cruisers is a class of warships in the United States Navy, first ordered and authorized in FY 1978. The class uses phased-array radar and was originally planned as a class of destroyers. However, the increased combat capability offered by the Aegis combat system and the AN/SPY-1 radar system was used to justify the change of the classification from DDG (guided missile destroyer) to CG (guided missile cruiser) shortly before the keels of Ticonderoga and Yorktown were laid down.</string>
+   
+       
+       
+       
+<string name="base_dimensions"></string>
+   <string name="base_crew"></string>
+   <string name="base_weapons"></string>
+   <string name="base_performance"></string>
+   <string name="base_propulsion"></string>
+   <string name="base_aircraft"></string>
+   <string name="base_ew"></string>
+   <string name="base_sensors"></string>
+   <string name="base_boats"></string>
+   <string name="base_about"></string>
    
     </resources>

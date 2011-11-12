@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ExpandableShipAdapter extends BaseExpandableListAdapter {
@@ -79,15 +80,15 @@ public class ExpandableShipAdapter extends BaseExpandableListAdapter {
       
             if (s != null) {
                     TextView titleTXT = (TextView) v.findViewById(R.id.ship_list_item_classLBL);
-                   // ImageView ribbonIMG = (ImageView) v.findViewById(R.id.ribbon_list_item_ribbonIMG);
+                    ImageView ribbonIMG = (ImageView) v.findViewById(R.id.ship_list_item_IMG);
                     
                     if (titleTXT != null) {
                           titleTXT.setText(s.getShip_class());                         
                     }
                     
-                  //  if(ribbonIMG != null){
-                    	//ribbonIMG.setImageResource(s.getType());
-                  //  }
+                   if(ribbonIMG != null){
+                    	ribbonIMG.setImageResource(s.getImage());
+                   }
                     
                     
                     

@@ -14,6 +14,7 @@ import android.widget.Button;
 public class RecceController extends Activity {
 	
 	Button shipsBTN;
+	Button subsBTN;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class RecceController extends Activity {
 
 	private void setConnections() {
 		shipsBTN = (Button)findViewById(R.id.recceViewShipsBTN);
+		subsBTN = (Button)findViewById(R.id.recceViewSubsBTN);
 		
 	}
 
@@ -43,5 +45,15 @@ public class RecceController extends Activity {
 			
 		});
 		
+		subsBTN.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				Intent intent = new Intent(v.getContext(), RecceSubsController.class);
+				
+				startActivity(intent);
+				
+			}
+			
+		});
 	}
 }
