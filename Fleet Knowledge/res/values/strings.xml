@@ -20,5 +20,6 @@
     <string name="title_ships">Ships</string>
     <string name="title_subs">Submarines</string>
     <string name="title_aircraft">Aircraft</string>
+    <string name="title_about">Developer</string>
    
     </resources>

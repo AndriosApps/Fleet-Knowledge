@@ -34,7 +34,6 @@ public class CreedsController extends Activity {
 	SimpleCursorAdapter notes;
 	ArrayList<Question> questionList;
 	Cursor cursor;
-	Button newBTN;
 	
 	
     /** Called when the activity is first created. */
@@ -59,22 +58,13 @@ public class CreedsController extends Activity {
 	
 
 	private void setConnections() {
-		newBTN = (Button) findViewById(R.id.creedsNewBTN);
 		listView = (ListView) findViewById(R.id.creedsListView);
 		fillData();
 	}
 
 	private void setOnClickListeners() {
-		newBTN.setOnClickListener(new OnClickListener(){
-
-			public void onClick(View v) {
-				Intent i = new Intent(v.getContext(), RecruitersQuestionsDetailsController.class);
-		    	//Activity returns a result id called with startActivityForResult
-		    	startActivityForResult(i, ACTIVITY_CREATE);
-				
-			}
+		
 			
-		});
 		
 		
 		listView.setOnItemClickListener(new OnItemClickListener(){

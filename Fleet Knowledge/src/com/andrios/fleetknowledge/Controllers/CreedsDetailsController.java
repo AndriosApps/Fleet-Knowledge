@@ -23,7 +23,6 @@ public class CreedsDetailsController extends Activity {
 	TextView titleTXT;
 	TextView bodyTXT;
 	long mRowId;
-	Button saveBTN;
 	int isKnown;
 	
     /** Called when the activity is first created. */
@@ -52,22 +51,12 @@ public class CreedsDetailsController extends Activity {
 	}
 
 	private void setConnections() {
-		saveBTN = (Button) findViewById(R.id.recruitersQuestionsDetailsSaveBTN);
 		titleTXT = (TextView) findViewById(R.id.creedsDetailsTitleLBL);
 		bodyTXT = (TextView) findViewById(R.id.creedsDetailsBodyLBL);
 	}
 
 	private void setOnClickListeners() {
-		saveBTN.setOnClickListener(new OnClickListener(){
-
-			public void onClick(View v) {
-				saveState();
-				setResult(RESULT_OK);
-				finish();
-				
-			}
-			
-		});
+		
 		
 	}
 	

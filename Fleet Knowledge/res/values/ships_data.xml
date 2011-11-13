@@ -375,16 +375,5 @@ or
    
     
        
-       
-<string name="base_dimensions"></string>
-   <string name="base_crew"></string>
-   <string name="base_weapons"></string>
-   <string name="base_performance"></string>
-   <string name="base_propulsion"></string>
-   <string name="base_aircraft"></string>
-   <string name="base_ew"></string>
-   <string name="base_sensors"></string>
-   <string name="base_boats"></string>
-   <string name="base_about"></string>
-   
+
     </resources>

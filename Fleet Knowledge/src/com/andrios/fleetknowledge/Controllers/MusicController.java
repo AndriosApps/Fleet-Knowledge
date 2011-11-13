@@ -96,7 +96,9 @@ public class MusicController extends Activity {
 					try{
 						open(ANCHORS_AWEIGH, v);
 					}catch(Exception e){
+						v.setBackgroundColor(Color.RED);
 						download(ANCHORS_AWEIGH_URL, ANCHORS_AWEIGH);
+						v.setBackgroundColor(Color.BLACK);
 					}
 				}else{
 					stopPlay();
@@ -305,8 +307,7 @@ private void open(String filename, final View v){
 	
 	public void download(String DownloadUrl, String fileName) {
 		File file = null;
-		Toast.makeText(MusicController.this, "Downloading " + fileName + ". Standby:",
-					Toast.LENGTH_SHORT).show();
+		
 		System.out.println("Downloading");
 		try {
 	        //set the download URL, a url that points to a file on the internet

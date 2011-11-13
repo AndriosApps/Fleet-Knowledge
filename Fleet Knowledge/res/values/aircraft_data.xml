@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+       <string name="base_function"></string>
+   <string name="base_type"></string>
+   <string name="base_propulsion"></string>
+   <string name="base_performance"></string>
+   <string name="base_size"></string>
+   <string name="base_crew"></string>
+   <string name="base_sensors"></string>
+   <string name="base_armament"></string>
+   <string name="base_current"></string>
+   <string name="base_mission"></string>
+   <string name="base_link">http://en.wikipedia.org/wiki/Northrop_Grumman_E-2_Hawkeye</string> 
+
+<string name="e2c_function">Airborn Early Warning (AEW)</string>
+   <string name="e2c_type">E-2C Hawkeye</string>
+   <string name="e2c_propulsion">E-2C: Two Allison T56-A-425 turboprops; ~4,600 horsepower
+       \nTwo Allison T56-A-427 engines; ~5,100 horsepower</string>
+   <string name="e2c_performance">E-2C: maximum speed 350 knots; range 1,300 nautical miles
+
+\nE-2C+: maximum speed 350 knots; range 1,500 nautical miles</string>
+   <string name="e2c_size">
+       Wing Span: 80 feet 7 inches
+       \nLength: 57 feet 8.75 inches
+       \nHeight: 18 feet 3.75 inches
+       \nDiameter of Rotodome: 24 feet
+       \nTailplane span: 7.99 m
+       \nWeight:
+       \n  Empty: 40,484 lb
+       \n  Max Fuel: 12,400 lb.
+       \n Takeoff Weight: 54,426 lbs
+   </string>
+   <string name="e2c_crew">Crew of five
+\ntwo pilots
+\nthree operators</string>
+   <string name="e2c_sensors">
+       \nE-2C: Lockheed Martin Ocean, Radar, and Surveillance Systems [ex General Electric Corporation] 
+       \n  AN/APS-138 radar since 1984;
+       \n  AN/APS-139 since 1988
+		\nE-2C+: Lockheed Martin Ocean, Radar, and Surveillance Systems [ex General Electric Corporation] 
+		\n  AN/APS-145 radar since 1991
+		\nAll: 
+		\n  AN/ALR-73 Passive Detection System
+		\n  IFF
+   </string>
+   <string name="e2c_armament">None</string>
+   <string name="e2c_current">true</string>
+   <string name="e2c_mission">The Hawkeye provides all-weather airborne early warning and command and control functions for the carrier battle group. Additional missions include surface surveillance coordination, strike and interceptor control, search and rescue guidance and communications relay. An integral component of the carrier air wing, the E-2C uses computerized sensors to provide early warning, threat analyses and control of counteraction against air and surface targets.</string>
+   <string name="e2c_link">http://en.wikipedia.org/wiki/Northrop_Grumman_E-2_Hawkeye</string>        
+
+       
+       <string name="e2d_function">Airborn Early Warning (AEW)</string>
+   <string name="e2d_type">E-2D Advanced Hawkeye</string>
+   <string name="e2d_propulsion"></string>
+   <string name="e2d_performance"></string>
+   <string name="e2d_size"></string>
+   <string name="e2d_crew"></string>
+   <string name="e2d_sensors"></string>
+   <string name="e2d_armament">CEC Engagement Capable</string>
+   <string name="e2d_current"></string>
+   <string name="e2d_mission"></string>
+   <string name="e2d_link">http://en.wikipedia.org/wiki/Northrop_Grumman_E-2_Hawkeye</string>        
+       
+       
+         <string name="ea6b_function">Electronic Attack</string>
+   <string name="ea6b_type">EA-6B</string>
+   <string name="ea6b_propulsion">two Pratt and Whitney J52-P-408 turbojet engines</string>
+   <string name="ea6b_performance"> Speed: 
+       \n  maximum at sea level: 651 mph
+    	\n  cruise: 481 mph
+    \nCeiling: 38,000 feet with five ECM pods
+    \nCombat range: maximum external fuel: 2,083 nautical miles</string>
+   <string name="ea6b_size">Wing Span: 53 feet
+       \nLength: 60 feet
+\nHeight: 16 feet
+\nWeight: empty: 32,162 pounds</string>
+   <string name="ea6b_crew"></string>
+   <string name="ea6b_sensors"></string>
+   <string name="ea6b_armament"></string>
+   <string name="ea6b_current"></string>
+   <string name="ea6b_mission"></string>
+   <string name="ea6b_link">http://en.wikipedia.org/wiki/Northrop_Grumman_E-2_Hawkeye</string> 
+       
+    </resources>
