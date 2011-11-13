@@ -1,6 +1,7 @@
 package com.andrios.fleetknowledge.Controllers;
 
 import com.andrios.fleetknowledge.R;
+import com.andrios.fleetknowledge.Database.AndriosDatabaseHelper;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -21,6 +22,7 @@ public class FleetKnowledgeActivity extends Activity {
 	Button musicBTN;
 	Button creedsBTN;
 	Button toolsBTN;
+	AndriosDatabaseHelper helper;
 	
     /** Called when the activity is first created. */
     @Override
@@ -28,7 +30,13 @@ public class FleetKnowledgeActivity extends Activity {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
-        
+        helper = new AndriosDatabaseHelper(this);
+        try{
+        	System.out.println("CREATE DATABASE");
+        	helper.createDataBase();
+        }catch(Exception e){
+        	e.printStackTrace();
+        }
         setConnections();
         setOnClickListeners();
     }

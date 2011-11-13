@@ -25,6 +25,7 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ExpandableListView.OnChildClickListener;
@@ -59,6 +60,8 @@ public class RecceSubsController extends Activity {
 	
 
 	private void setConnections() {
+		TextView titleLBL = (TextView) findViewById(R.id.recceShipsViewTitleLBL);
+		titleLBL.setText("US Navy Submarines");
 		newBTN = (Button) findViewById(R.id.creedsNewBTN);
 		listView = (ExpandableListView) findViewById(R.id.recceShipViewExpandableListView);
 		fillData();
@@ -95,11 +98,7 @@ public class RecceSubsController extends Activity {
 	    	cursor = mDbAdapter.fetchAllSubs();
 	    	startManagingCursor(cursor);
 	    	
-	    	if(cursor.getCount() < 1){
-	    		buildBaseSubs();
-	    		fillData();
-	    		
-	    	}else{
+	    	
 	    	
 		    	cursor.moveToFirst();
 		    	subList = new ArrayList<Ship>();
@@ -108,7 +107,7 @@ public class RecceSubsController extends Activity {
 		       	    cursor.moveToNext();
 		        }
 		        cursor.close();
-	    	}
+	    	
 	    	
 	    }
 	 
@@ -123,88 +122,7 @@ public class RecceSubsController extends Activity {
 	    	fillData();
 	    }
 	 
-	 private void buildBaseSubs(){
-		 final Resources r = Resources.getSystem();
-		 mDbAdapter.createSub("Ballistic Missile Submarine (SSBN)", 
-				 "Ohio Class", 
-				 getResources().getString(R.string.ohio_dimensions), 
-				 getResources().getString(R.string.ohio_crew), 
-
-				 getResources().getString(R.string.ohio_ssbn_weapons), 
-				 getResources().getString(R.string.ohio_performance), 
-				 getResources().getString(R.string.ohio_propulsion),
-				 getResources().getString(R.string.ohio_aircraft), 
-				 getResources().getString(R.string.ohio_ew), 
-				 getResources().getString(R.string.ohio_sensors),
-				 getResources().getString(R.string.ohio_boats),     
-				 getResources().getString(R.string.ohio_about),
-				 "ohio",
-				 "http://en.wikipedia.org/wiki/Ohio_class");
-		 
-		 mDbAdapter.createSub("Cruise Missile Submarine (SSGN)", 
-				 "Ohio Class", 
-				 getResources().getString(R.string.ohio_dimensions), 
-				 getResources().getString(R.string.ohio_crew), 
-
-				 getResources().getString(R.string.ohio_ssgn_weapons), 
-				 getResources().getString(R.string.ohio_performance), 
-				 getResources().getString(R.string.ohio_propulsion),
-				 getResources().getString(R.string.ohio_aircraft), 
-				 getResources().getString(R.string.ohio_ew), 
-				 getResources().getString(R.string.ohio_sensors),
-				 getResources().getString(R.string.ohio_boats),     
-				 getResources().getString(R.string.ohio_about),
-				 "ohio",
-				 "http://en.wikipedia.org/wiki/Ohio_class");
-		
-		 mDbAdapter.createSub("Attack Submarine (SSN)", 
-				 "Virginia Class", 
-				 getResources().getString(R.string.virginia_dimensions), 
-				 getResources().getString(R.string.virginia_crew), 
-
-				 getResources().getString(R.string.virginia_weapons), 
-				 getResources().getString(R.string.virginia_performance), 
-				 getResources().getString(R.string.virginia_propulsion),
-				 getResources().getString(R.string.virginia_aircraft), 
-				 getResources().getString(R.string.virginia_ew), 
-				 getResources().getString(R.string.virginia_sensors),
-				 getResources().getString(R.string.virginia_boats),     
-				 getResources().getString(R.string.virginia_about),
-				 "virginia",
-				 "http://en.wikipedia.org/wiki/Virginia_class_submarine");
-		 
-		 mDbAdapter.createSub("Attack Submarine (SSN)", 
-				 "Seawolf Class", 
-				 getResources().getString(R.string.seawolf_dimensions), 
-				 getResources().getString(R.string.seawolf_crew), 
-
-				 getResources().getString(R.string.seawolf_weapons), 
-				 getResources().getString(R.string.seawolf_performance), 
-				 getResources().getString(R.string.seawolf_propulsion),
-				 getResources().getString(R.string.seawolf_aircraft), 
-				 getResources().getString(R.string.seawolf_ew), 
-				 getResources().getString(R.string.seawolf_sensors),
-				 getResources().getString(R.string.seawolf_boats),     
-				 getResources().getString(R.string.seawolf_about),
-				 "seawolf",
-				 "http://en.wikipedia.org/wiki/Seawolf_class_submarine");
-		
-		 mDbAdapter.createSub("Attack Submarine (SSN)", 
-				 "Los Angeles Class", 
-				 getResources().getString(R.string.los_angeles_dimensions), 
-				 getResources().getString(R.string.los_angeles_crew), 
-
-				 getResources().getString(R.string.los_angeles_weapons), 
-				 getResources().getString(R.string.los_angeles_performance), 
-				 getResources().getString(R.string.los_angeles_propulsion),
-				 getResources().getString(R.string.los_angeles_aircraft), 
-				 getResources().getString(R.string.los_angeles_ew), 
-				 getResources().getString(R.string.los_angeles_sensors),
-				 getResources().getString(R.string.los_angeles_boats),     
-				 getResources().getString(R.string.los_angeles_about),
-				 "los_angeles",
-				 "http://en.wikipedia.org/wiki/Los_Angeles_class_submarine");
-	 }
+	 
 	 
 	 
 	 

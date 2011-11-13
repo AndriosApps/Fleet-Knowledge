@@ -43,7 +43,6 @@ public class ExpandableAircraftAdapter extends BaseExpandableListAdapter {
      */
     public void addItem(Aircraft s) {
         if (!groups.contains(s.getFunction())) {
-        	System.out.println("Adding Group: " + s.getFunction());
             groups.add(s.getFunction());
         }
         int index = groups.indexOf(s.getFunction());
@@ -85,7 +84,6 @@ public class ExpandableAircraftAdapter extends BaseExpandableListAdapter {
                     if (titleTXT != null) {
                           titleTXT.setText(s.getAc_type());                         
                     }
-                    System.out.println("IMAGE" + s.getImage());
                    if(ribbonIMG != null){
                     	ribbonIMG.setImageResource(s.getImage());
                    }
@@ -116,7 +114,6 @@ public class ExpandableAircraftAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView,
             ViewGroup parent) {
         String group = (String) getGroup(groupPosition);
-        System.out.println("Group: " + group + " Position: " + groupPosition);
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
