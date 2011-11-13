@@ -326,33 +326,32 @@ public class AndriosDbAdapter {
 			// AC STATIC VARIABLES
 				public static final String DATABASE_AC_TABLE = "aircraft";
 
-			public static final String KEY_AC_TYPE = "type";
-			public static final String KEY_AC_CLASS = "sub_class";
-			public static final String KEY_AC_DIMENSIONS = "dimensions";
-			public static final String KEY_AC_CREW = "crew";
-			public static final String KEY_AC_WEAPONS = "weapons";
-			public static final String KEY_AC_PERFORMANCE = "performance";
+			public static final String KEY_AC_FUNCTION = "function";
+			public static final String KEY_AC_TYPE = "ac_type";
 			public static final String KEY_AC_PROPULSION = "propulsion";
-			public static final String KEY_AC_AIRCRAFT = "aircraft";
-			public static final String KEY_AC_EW = "ew";
+			public static final String KEY_AC_PERFORMANCE = "performance";
+			public static final String KEY_AC_SIZE = "size";
+			public static final String KEY_AC_CREW = "crew";
 			public static final String KEY_AC_SENSORS = "sensors";
-			public static final String KEY_AC_BOATS = "boats";
-			public static final String KEY_AC_ABOUT = "about";
+			public static final String KEY_AC_ARMAMENT = "armament";
+			public static final String KEY_AC_CURRENT = "current";
+			public static final String KEY_AC_MISSION = "mission";
 			public static final String KEY_AC_IMAGE = "image";
+			public static final String KEY_AC_LINK = "link";
 				/**
 				 * Create a new crisis information. If the information is sucessfully created
 				 * return the new rowID for that set, otherwise return a -1 to indicate failure.
 				 */
-				public long createAircraft(String type, String ac_class, String dimension, String crew, String weapons, String performance, String propulsion, String aircraft, String ew, String sensors, String boats, String about, String image, String link){
-					ContentValues initialValues = createAircraftContentValues(type, ac_class, dimension, crew, weapons, performance, propulsion, aircraft, ew, sensors, boats, about, image, link);
+				public long createAircraft(String function, String ac_type, String propulsion, String performance, String size, String crew, String sensors, String armament, String current, String mission, String image, String link){
+					ContentValues initialValues = createAircraftContentValues(function, ac_type, propulsion, performance, size, crew, sensors, armament, current, mission,  image, link);
 					return database.insert(DATABASE_AC_TABLE, null, initialValues);
 				}
 				
 				/**
 				 * Update the information
 				 */
-				public boolean updateAircraft(long rowId, String type, String ac_class, String dimension, String crew, String weapons, String performance, String propulsion, String aircraft, String ew, String sensors, String boats, String about, String image, String link){
-					ContentValues updateValues = createAircraftContentValues(type, ac_class, dimension, crew, weapons, performance, propulsion, aircraft, ew, sensors, boats, about, image, link);
+				public boolean updateAircraft(long rowId, String function, String ac_type, String propulsion, String performance, String size, String crew, String sensors, String armament, String current, String mission, String image, String link){
+					ContentValues updateValues = createAircraftContentValues(function, ac_type, propulsion, performance, size, crew, sensors, armament, current, mission,  image, link);
 					return database.update(DATABASE_AC_TABLE, updateValues, KEY_ROWID + "=" + rowId, null) >0;
 					
 				}
@@ -369,35 +368,34 @@ public class AndriosDbAdapter {
 				 * @return Cursor over all Information Sets
 				 */
 				public Cursor fetchAllAircrafts(){
-					return database.query(DATABASE_AC_TABLE, new String[] {KEY_ROWID, KEY_AC_TYPE, KEY_AC_CLASS, KEY_AC_DIMENSIONS, KEY_AC_CREW, KEY_AC_WEAPONS, KEY_AC_PERFORMANCE, KEY_AC_PROPULSION, KEY_AC_AIRCRAFT, KEY_AC_EW, KEY_AC_SENSORS, KEY_AC_BOATS, KEY_AC_ABOUT, KEY_AC_IMAGE}, null, null, null, null, null);
+					return database.query(DATABASE_AC_TABLE, new String[] {KEY_ROWID, KEY_AC_FUNCTION, KEY_AC_TYPE, KEY_AC_PROPULSION, KEY_AC_PERFORMANCE, KEY_AC_SIZE, KEY_AC_CREW, KEY_AC_SENSORS, KEY_AC_ARMAMENT, KEY_AC_CURRENT, KEY_AC_MISSION,  KEY_AC_IMAGE,  KEY_AC_LINK}, null, null, null, null, null);
 				}
 				
 				/**
 				 * Return a Cursor positioned at the defined information set
 				 */
 				public Cursor fetchAircraft(long rowId) throws SQLException{
-					Cursor mCursor = database.query(DATABASE_AC_TABLE, new String[] {KEY_ROWID, KEY_AC_TYPE, KEY_AC_CLASS, KEY_AC_DIMENSIONS, KEY_AC_CREW, KEY_AC_WEAPONS, KEY_AC_PERFORMANCE, KEY_AC_PROPULSION, KEY_AC_AIRCRAFT, KEY_AC_EW, KEY_AC_SENSORS, KEY_AC_BOATS, KEY_AC_ABOUT, KEY_AC_IMAGE}, KEY_ROWID + "=" + rowId, null, null, null, null, null);
+					Cursor mCursor = database.query(DATABASE_AC_TABLE, new String[] {KEY_ROWID, KEY_AC_FUNCTION, KEY_AC_TYPE, KEY_AC_PROPULSION, KEY_AC_PERFORMANCE, KEY_AC_SIZE, KEY_AC_CREW, KEY_AC_SENSORS, KEY_AC_ARMAMENT, KEY_AC_CURRENT, KEY_AC_MISSION,  KEY_AC_IMAGE,  KEY_AC_LINK}, KEY_ROWID + "=" + rowId, null, null, null, null, null);
 					if(mCursor != null){
 						mCursor.moveToFirst();
 					}
 					return mCursor;
 				}
 				
-				private ContentValues createAircraftContentValues(String type, String ac_class, String dimension, String crew, String weapons, String performance, String propulsion, String aircraft, String ew, String sensors, String boats, String about, String image, String link){
+				private ContentValues createAircraftContentValues(String function, String ac_type, String propulsion, String performance, String size, String crew, String sensors, String armament, String current, String mission, String image, String link){
 					ContentValues values = new ContentValues();
-					values.put(KEY_AC_TYPE, type);
-					values.put(KEY_AC_CLASS, ac_class );
-					values.put(KEY_AC_DIMENSIONS, dimension);
-					values.put(KEY_AC_CREW, crew );
-					values.put(KEY_AC_WEAPONS, weapons );
-					values.put(KEY_AC_PERFORMANCE, performance );
+					values.put(KEY_AC_FUNCTION, function);
+					values.put(KEY_AC_TYPE, ac_type );
 					values.put(KEY_AC_PROPULSION, propulsion);
-					values.put(KEY_AC_AIRCRAFT, aircraft);
-					values.put(KEY_AC_EW, ew);
+					values.put(KEY_AC_PERFORMANCE, performance );
+					values.put(KEY_AC_SIZE, size );
+					values.put(KEY_AC_CREW, crew );
 					values.put(KEY_AC_SENSORS, sensors);
-					values.put(KEY_AC_BOATS, boats);
-					values.put(KEY_AC_ABOUT, about);
+					values.put(KEY_AC_ARMAMENT, armament);
+					values.put(KEY_AC_CURRENT, current);
+					values.put(KEY_AC_MISSION, mission);
 					values.put(KEY_AC_IMAGE, image);
+					values.put(KEY_AC_LINK, link);
 					
 					return values;
 				}

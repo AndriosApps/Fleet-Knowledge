@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-       <string name="base_function"></string>
+         
+       
+       
+   <string name="base_function"></string>
    <string name="base_type"></string>
    <string name="base_propulsion"></string>
    <string name="base_performance"></string>
@@ -11,9 +14,10 @@
    <string name="base_armament"></string>
    <string name="base_current"></string>
    <string name="base_mission"></string>
-   <string name="base_link">http://en.wikipedia.org/wiki/Northrop_Grumman_E-2_Hawkeye</string> 
+   <string name="base_link"></string> 
 
-<string name="e2c_function">Airborn Early Warning (AEW)</string>
+
+<string name="e2c_function">Airborne Command and Control</string>
    <string name="e2c_type">E-2C Hawkeye</string>
    <string name="e2c_propulsion">E-2C: Two Allison T56-A-425 turboprops; ~4,600 horsepower
        \nTwo Allison T56-A-427 engines; ~5,100 horsepower</string>
@@ -63,8 +67,208 @@
    <string name="e2d_link">http://en.wikipedia.org/wiki/Northrop_Grumman_E-2_Hawkeye</string>        
        
        
-         <string name="ea6b_function">Electronic Attack</string>
-   <string name="ea6b_type">EA-6B</string>
+
+      
+       
+       
+   <string name="greyhound_function">Cargo/Transport</string>
+   <string name="greyhound_type">C-2 Greyhound</string>
+   <string name="greyhound_propulsion">two Allison T56 turboprop engines</string>
+   <string name="greyhound_performance">Capacity: 26 passengers, 12 litter patients
+\nPayload: 10,000 lb (4,536 kg)
+\nMaximum speed: 343 knots (394 mph, 553 km/h) at 12,000 ft (3,660 m)
+\nCruise speed: 251 knots (289 mph, 465 km/h) at 28,700 ft (8,750 m)
+\nStall speed: 82 knots (94 mph, 152 km/h) at idle power
+\nRange: 1,300 nm (1,496 mi, 2,400 km)
+\nService ceiling: 33,500 ft (10,210 m)
+\nRate of climb: 2,610 ft/min (13.3 m/s)</string>
+   <string name="greyhound_size">Length: 56 ft 10 in (17.30 m)
+\nWingspan: 80 ft 7 in (24.60 m)
+\nHeight: 15 ft 10½ in (4.85 m)
+\nWing area: 700 ft² (65 m²)
+\nEmpty weight: 33,746 lb (15,310 kg)
+\nLoaded weight: 49,394 lb (22,405 kg)
+\nUseful load: 20,608 lb (9,350 kg)
+\nMax takeoff weight: 60,000 lb (24,655 kg)</string>
+   <string name="greyhound_crew">2 pilots\n2 aircrew</string>
+   <string name="greyhound_sensors"></string>
+   <string name="greyhound_armament">None</string>
+   <string name="greyhound_current">true</string>
+   <string name="greyhound_mission">Powered by two Allison T56 turboprop engines, the C-2A can deliver up to 10,000 pounds (4,500 kg) of cargo, passengers or both. It can also carry litter patients in medical evacuation missions. A cage system or transport stand restrains cargo during carrier launch and landing. The large aft cargo ramp and door and a powered winch allow straight-in rear cargo loading and unloading for fast turnaround.
+
+Its ability to airdrop supplies and personnel, fold its wings, and generate power for engine starting and other uses provide an operational versatility found in no other cargo aircraft.
+
+The fact that this aircraft has four vertical stabilizers is due to aircraft carrier hangar deck height restrictions. Only three of these stabilizers have working rudders. For adequate directional control of an aircraft of this size, a single rudder would have been too tall. It also places the outboard rudder surfaces directly in line with the propeller wash, providing effective yaw control even as the plane\'s airspeed approaches zero, as during takeoff and landing.</string>
+   <string name="greyhound_link">http://en.wikipedia.org/wiki/Grumman_C-2_Greyhound</string> 
+       
+   <string name="gulfstream3_function">Cargo/Transport</string>
+   <string name="gulfstream3_type">C-20 Gulfstream III</string>
+   <string name="gulfstream3_propulsion">2 × Rolls-Royce Spey RB.163 Mk 511-8 Turbofan, 11,400 lbf (50.7 kN) each</string>
+   <string name="gulfstream3_performance">    Maximum speed: 576 mph (501 knots, 928 km/h) (max cruise)
+    \nCruise speed: 508 mph (442 knots, 818 km/h) (long range cruise)
+    \nStall speed: 121 mph (105 knots, 194 km/h)
+    \nRange: 4,200 mi (3,650 nmi, 6,760 km) (eight passengers, IFR reserves)
+    \nService ceiling: 45,000 ft (13,716 m)
+    \nRate of climb: 3,800 ft/min (19.3 m/s)
+       
+   </string>
+   <string name="gulfstream3_size">Length: 83 ft 1 in (25.32 m)
+\nWingspan: 77 ft 10 in (23.72 m)
+\nHeight: 24 ft 4½ in (7.43 m)
+\nWing area: 934.6 sq ft (86.83 m²)
+\nAspect ratio: 6.0:1
+\nEmpty weight: 38,000 lb (17,236 kg)
+\nMax takeoff weight: 69,700 lb (31,615 kg)</string>
+   <string name="gulfstream3_crew">Two or Three</string>
+   <string name="gulfstream3_sensors">See More Information</string>
+   <string name="gulfstream3_armament">None</string>
+   <string name="gulfstream3_current">true</string>
+   <string name="gulfstream3_mission">C-20D - United States Navy Operational Support Airlift (OSA) aircraft with modified communications equipment for use by the Navy, normally in support of high-ranking naval officials</string>
+   <string name="gulfstream3_link">http://en.wikipedia.org/wiki/Gulfstream_III</string> 
+       
+       
+       
+   <string name="gulfstreamv_function">Cargo/Transport</string>
+   <string name="gulfstreamv_type">C-37A Gulfstream V</string>
+   <string name="gulfstreamv_propulsion"></string>
+   <string name="gulfstreamv_performance">Capacity: 12-16 passengers
+       \nMaximum speed: 672 mph (Mach .885)
+    \nRange: 6,300 miles (10,139 km)
+    \nService ceiling: 51,000 ft (15,240 m)
+       </string>
+   <string name="gulfstreamv_size">Length: 96 ft 5 in (29.38 m)
+\nWingspan: 93 ft 6 in (28.5 m)
+\nHeight: 25 ft 11 in (7.9 m)
+\nMax takeoff weight: 90,500 lb (41,050 kg)</string>
+   <string name="gulfstreamv_crew">5</string>
+   <string name="gulfstreamv_sensors"></string>
+   <string name="gulfstreamv_armament">None</string>
+   <string name="gulfstreamv_current">true</string>
+   <string name="gulfstreamv_mission">Designated C-37A in U.S. Air Force service, the Gulfstream V is used by government and Defense Department officials. The US Coast Guard operates one C-37A for transportation of the Department of Homeland Security Secretary and the Commandant of the Coast Guard. The US Navy operates one C-37A.
+
+The aircraft has a flight management system with a worldwide satellite-based Global Positioning System. The C-37A is capable of cruising at 51,000 feet (16,000 m). Features include enhanced weather radar, autopilot and head-up display for the pilot. Safety features include Enhanced Vision Systems that allows increased visibility in adverse environments. The aircraft is also equipped with commercial and military communications equipment to provide secure voice and data capability. The U.S. Air Force equips the C-37A with a basic crew of two pilots, one flight engineer, one communications systems operator, and one flight attendant.</string>
+   <string name="gulfstreamv_link">http://en.wikipedia.org/wiki/Gulfstream_V</string> 
+       
+              
+       
+   <string name="clipper_function">Cargo/Transport</string>
+   <string name="clipper_type">C-40 Clipper</string>
+   <string name="clipper_propulsion">2 × CFM International CFM56-7 SLST turbofans, 27,300 lbf (121 kN) each</string>
+   <string name="clipper_performance">Capacity:
+	\n  Passenger configuration: 121 passengers
+    \n  Cargo configuration: 8 pallets of cargo
+    \n  Combination configuration: 3 pallets of cargo, 70 passengers.
+    \nPayload: 40,000 lb (18,000 kg)
+\nMaximum speed: 534 knots (615 mph, 990 km/h)
+    \nRange: 3,000 nm (3,500 mi, 5,600 km)
+    \nService ceiling: 41,000 ft (12,500 m)
+    \nThrust/weight: 0.407</string>
+   <string name="clipper_size">Length: 110 ft 4 in (33.63 m)
+\nWingspan: 112 ft 7 in (34.32 m)
+\nHeight: 41 ft 2 in (12.55 m)
+\nEmpty weight: 126,000 lb (57,150 kg)
+\nLoaded weight: 134,000 lb (61,000 kg)
+\nMax takeoff weight: 171,000 lb (78,000 kg)</string>
+   <string name="clipper_crew">5 (two pilots, one crew chief, one loadmaster and one transport safety specialist)</string>
+   <string name="clipper_sensors"></string>
+   <string name="clipper_armament"></string>
+   <string name="clipper_current">C-40A Clipper
+    \n  United States Navy version of the Boeing 737-700 for high-priority cargo and passenger transport, nine built.
+    \nC-40B
+    \n  United States Air Force version of the Boeing 737-700 based Boeing Business Jet modified as a special mission aircraft for commanders and government officials, four built.
+\nC-40C
+    \n  United States Air Force version of the Boeing 737-700 based Boeing Business Jet, operational support and transport aircraft, six built.</string>
+   <string name="clipper_mission">The Boeing C-40 Clipper is a military version of the Boeing 737-700C airline transport. It is used by both the United States Navy and the United States Air Force.
+       \nThe C-40A Clipper provides critical logistics support to the United States Navy. Its flight deck features a flight management computer system with an integrated GPS. The C-40A is compatible with future GATM/FANS operating environment (RNP-1). It is RVSM capable. It has the Traffic Alert and Collision Avoidance System II on board. It also has an enhanced ground proximity warning system, predictive wind shear, head-up display and TACAN/UHF/IFF functions.</string>
+   <string name="clipper_link">http://en.wikipedia.org/wiki/Boeing_C-40_Clipper</string> 
+   
+              
+       
+   <string name="hercules_function">Cargo/Transport</string>
+   <string name="hercules_type">C-130 Hercules</string>
+   <string name="hercules_propulsion">4 × Allison T56-A-15 turboprops, 4,590 shp (3,430 kW) each</string>
+   <string name="hercules_performance">Capacity:
+
+    \n  92 passengers or
+    \n  64 airborne troops or
+    \n  74 litter patients with 2 medical personnel or
+    \n  6 pallets or
+    \n  2–3 Humvees or
+    \n  2 M113 armored personnel carriers
+    \nPayload: 45,000 lb (20,000 kg)
+\nMaximum speed: 320 knots (366 mph, 592 km/h) at 20,000 ft (6,060 m)
+    \nCruise speed: 292 kn (336 mph, 540 km/h)
+    \nRange: 2,050 nmi (2,360 mi, 3,800 km)
+    \nService ceiling: 33,000 ft (10,060 m) empty; 23,000 ft (7,077 m) with 42,000 pounds (19,090 kilograms) payload
+    \nRate of climb: 1,830 ft/min (9.3 m/s)
+    \nTakeoff distance: 3,586 ft (1,093 m) at 155,000 lb (70,300 kg) max gross weight; 1,400 ft (427 m) at 80,000 lb (36,300 kg) gross weight
+
+       
+   </string>
+   <string name="hercules_size">Length: 97 ft 9 in (29.8 m)
+\nWingspan: 132 ft 7 in (40.4 m)
+\nHeight: 38 ft 3 in (11.6 m)
+\nWing area: 1,745 ft² (162.1 m²)
+\nEmpty weight: 75,800 lb (34,400 kg)
+\nUseful load: 72,000 lb (33,000 kg)
+\nMax takeoff weight: 155,000 lb (70,300 kg)</string>
+   <string name="hercules_crew">5 (two pilots, navigator, flight engineer and loadmaster)</string>
+   <string name="hercules_sensors">AN/APN-241 weather and navigational radar</string>
+   <string name="hercules_armament"></string>
+   <string name="hercules_current"></string>
+   <string name="hercules_mission">The Lockheed C-130 Hercules is a four-engine turboprop military transport aircraft designed and built originally by Lockheed, now Lockheed Martin. Capable of using unprepared runways for takeoffs and landings, the C-130 was originally designed as a troop, medical evacuation, and cargo transport aircraft. The versatile airframe has found uses in a variety of other roles, including as a gunship (AC-130), for airborne assault, search and rescue, scientific research support, weather reconnaissance, aerial refueling, maritime patrol and aerial firefighting. It is the main tactical airlifter for many military forces worldwide. Over 40 models and variants of the Hercules serve with more than 60 nations.</string>
+   <string name="hercules_link">http://en.wikipedia.org/wiki/Lockheed_C-130_Hercules</string> 
+   
+              
+       
+   <string name="sabreliner_function">Cargo/Transport</string>
+   <string name="sabreliner_type">T-39 Sabreliner</string>
+   <string name="sabreliner_propulsion">2 × Pratt and Whitney J60-P-3 turbojet, 3,000 lbf (13.3 kN) each</string>
+   <string name="sabreliner_performance">Capacity: 5–7 passengers
+       \nMaximum speed: 478 knots (550 mph, 885 km/h)
+    \nCruise speed: 435 knots (500 mph, 800 km/h)
+    \nRange: 2,170 nm (2,500 mi, 4,020 km)
+    \nService ceiling: 40,000+ ft (12,200+ m)
+    \nThrust/weight: 0.338
+       </string>
+   <string name="sabreliner_size">Length: 44 ft (13.41 m)
+\nWingspan: 44 ft 6 in (13.56 m)
+\nHeight: 16 ft (4.88 m)
+\nWing area: 342.1 ft² (31.79 m²)
+\nEmpty weight: 9,257 lb (4,199 kg)
+\nLoaded weight: 16,340 lb (7,412 kg)
+\nMax takeoff weight: 17,760 lb (8,056 kg)</string>
+   <string name="sabreliner_crew">4-5</string>
+   <string name="sabreliner_sensors"></string>
+   <string name="sabreliner_armament"></string>
+   <string name="sabreliner_current"></string>
+   <string name="sabreliner_mission">North American began development of the Sabreliner as an in-house project, and in response to the UTX request for proposals, they offered a military version to the Air Force. UTX combined two different roles, personnel transport and combat readiness training into the same aircraft.[2]</string>
+   <string name="sabreliner_link">http://en.wikipedia.org/wiki/North_American_Sabreliner</string> 
+   
+       
+    <string name="mercury_function">Airborne Command and Control</string>
+   <string name="mercury_type">E-6 Mercury</string>
+   <string name="mercury_propulsion">4 × CFMI CFM-56-2A-2 high-bypass turbofans</string>
+   <string name="mercury_performance">Capacity: 23
+       \nMaximum speed: .862 mach (600 miles per hour, 520 knots; 970 kilometres per hour)
+    \nRange: 6,600 nautical miles (7,590 statute miles, 12,144 kilometers with 6 hours loiter time)
+    \nService ceiling: > 40,000 feet (12,200 meters)
+       </string>
+   <string name="mercury_size">Length: 150 feet 4 inches (45.8 meters)
+\nWingspan: 148 feet 4 inches (45.2 meters)
+\nHeight: 42 feet 5 inches (12.9 meters)
+\nLoaded weight: 342,000 lb (154,400 kilograms)
+\nMax takeoff weight: 342,000 lb (154,400 kg)</string>
+   <string name="mercury_crew">12-25</string>
+   <string name="mercury_sensors"></string>
+   <string name="mercury_armament"></string>
+   <string name="mercury_current">true</string>
+   <string name="mercury_mission">Codenamed Looking Glass, it is United States Strategic Command (USSTRATCOM)\'s Airborne Command Post, designed to take over in case the Global Operations Center (GOC), located at Offutt Air Force Base, Nebraska, is destroyed or incapable of communicating with strategic forces. The term "looking glass" is used because it "mirrors" the abilities of the GOC to control nuclear forces.</string>
+   <string name="mercury_link">http://en.wikipedia.org/wiki/Boeing_E-6_Mercury</string> 
+   
+       
+                <string name="ea6b_function">Electronic Warfare</string>
+   <string name="ea6b_type">EA-6B Prowler</string>
    <string name="ea6b_propulsion">two Pratt and Whitney J52-P-408 turbojet engines</string>
    <string name="ea6b_performance"> Speed: 
        \n  maximum at sea level: 651 mph
@@ -75,11 +279,78 @@
        \nLength: 60 feet
 \nHeight: 16 feet
 \nWeight: empty: 32,162 pounds</string>
-   <string name="ea6b_crew"></string>
-   <string name="ea6b_sensors"></string>
-   <string name="ea6b_armament"></string>
-   <string name="ea6b_current"></string>
-   <string name="ea6b_mission"></string>
+   <string name="ea6b_crew">four (pilot and three electronic warfare officers)</string>
+   <string name="ea6b_sensors">5× AN/ALQ-99 Tactical Jamming System (TJS) external pods\nUSQ-113 communications jamming system</string>
+   <string name="ea6b_armament">4× AGM-45 Shrike or \n4xAGM-88 HARM Anti-radiation missiles</string>
+   <string name="ea6b_current">true</string>
+   <string name="ea6b_mission">The EA-6B Prowler was designed to complement the Navy\'s defenses in today\'s electronic warfare environment. Electronic countermeasures required improvement to compete with the ever-increasing complexity of hostile radar-guided guns, missiles and aircraft. The Prowler was the first aircraft built from the drawing boards to fulfill the role of an electronic warfare aircraft.</string>
    <string name="ea6b_link">http://en.wikipedia.org/wiki/Northrop_Grumman_E-2_Hawkeye</string> 
        
+      
+       
+       
+          <string name="growler_function">Electronic Warfare</string>
+   <string name="growler_type"></string>
+   <string name="growler_propulsion">2 × General Electric F414-GE-400 turbofans
+       \n  Dry thrust: 14,000 lbf (62.3 kN) each
+    \n  Thrust with afterburner: 22,000 lbf (97.9 kN) each
+       </string>
+   <string name="growler_performance">    Maximum speed: Mach 1.8[46] (1,190 mph, 1,900 km/h) at 40,000 ft (12,190 m)
+    \nRange: 1,275 nmi (2,346 km) clean plus two AIM-9s[46]
+    \nCombat radius: 390 nmi (449 mi, 722 km) for interdiction mission[47]
+    \nFerry range: 1,800 nmi (2,070 mi, 3,330 km) (range without ordnance)
+    \nService ceiling: >50,000 ft (15,000 m)
+    \nWing loading: 92.8 lb/ft² (453 kg/m²)
+    \nThrust/weight: 0.93
+       
+   </string>
+   <string name="growler_size">Length: 60 ft 1.25 in (18.31 m)
+\nWingspan: 44 ft 8.5 in (13.62 m) (including wingtip-mounted pods)
+\nHeight: 16 ft (4.88 m)
+\nWing area: 500 ft² (46.5 m²)
+\nEmpty weight: 33,094 lb (15,011 kg)
+\nLoaded weight: 48,000 lb (21,772 kg) (recovery weight)
+\nMax takeoff weight: 66,000 lb (29,964 kg)</string>
+   <string name="growler_crew">2</string>
+   <string name="growler_sensors">Raytheon AN/APG-79 Active Electronically Scanned Array (AESA) radar
+       \nAN/ALQ-218 detection pods
+       \nAN/ALQ-99 High Band Jamming Pods
+       \nAN/ALQ-99 Low Band Jamming Pod
+       \nAN/ASQ-228 ATFLIR</string>
+   <string name="growler_armament">Guns: None
+    \nHardpoints: 9 total: 6× under-wing, and 3× under-fuselage with a capacity of 17,750 lb (8,050 kg) external fuel and ordnance
+    \nAGM-88 HARM missiles)
+	\nAIM-120 AMRAAM.
+    \nAGM-154 JSOW</string>
+   <string name="growler_current">True</string>
+   <string name="growler_mission">The Boeing EA-18G Growler is an American carrier-based electronic warfare aircraft, a specialized version of the two-seat F/A-18F Super Hornet. The EA-18G will replace the Northrop Grumman EA-6B Prowlers in service with the United States Navy. The Growler\'s electronic warfare capability is primarily provided by Northrop Grumman. The EA-18G began production in 2007 and entered operational service in late 2009.</string>
+   <string name="growler_link">http://en.wikipedia.org/wiki/Boeing_EA-18G_Growler</string> 
+   
+          <string name="aries2_function">Electronic Warfare</string>
+   <string name="aries2_type">EP-3 ARIES II</string>
+   <string name="aries2_propulsion">Powerplant: 4 × Allison T56-A-14 turboprop, 4,600 shp (3,450 kW) each
+       \nPropellers: Four-bladed Hamilton Standard propeller, 1 per engine
+       \n  Propeller diameter: 13 ft 6 in (4.11 m)
+       </string>
+   <string name="aries2_performance">Maximum speed: 780 km/h (420 knots, 485 mph)
+    \nCruise speed: 650 km/h (350 knots, 405 mph)
+    \nRange: 2,380 nm (2,739 mi / 4,400 km)
+    \nService ceiling: 30,000 feet (9,150 m)
+       
+   </string>
+   <string name="aries2_size">Length: 116 ft 7 in (35.57 m)
+\nWingspan: 99 ft 6 in (30.36 m)
+\nHeight: 33 ft 7 in (10.27 m)
+\nWing area: 1300 ft² (120.8 m²)
+\nAirfoil: NACA 0014-1.10 (Root) - NACA 0012-1.10 (Tip)
+\nEmpty weight: 77,200 lb (35,000 kg)
+\nLoaded weight: 135,000 lb (61,400 kg)
+\nUseful load: 57,800 lb (26,400 kg)
+\nMax takeoff weight: 142,000 lb (64,400 kg)</string>
+   <string name="aries2_crew">22+</string>
+   <string name="aries2_sensors">Signals Intelligence (SIGINT) Suite</string>
+   <string name="aries2_armament"></string>
+   <string name="aries2_current">True</string>
+   <string name="aries2_mission">The Lockheed EP-3 is the signals reconnaissance version of the P-3 Orion, operated by the United States Navy.</string>
+   <string name="aries2_link">http://en.wikipedia.org/wiki/Lockheed_EP-3</string> 
     </resources>
