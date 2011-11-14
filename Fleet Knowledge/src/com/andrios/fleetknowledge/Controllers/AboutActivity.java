@@ -58,7 +58,6 @@ public class AboutActivity extends Activity {
 		twitterBTN = (Button) findViewById(R.id.aboutActivityTwitterBTN);
 		emailBTN = (Button) findViewById(R.id.aboutActivityEmailBTN);
 		marketBTN = (Button) findViewById(R.id.aboutActivityMarketBTN);
-		//facebookBTN.setVisibility(View.INVISIBLE);
 	}
 
 
@@ -72,7 +71,7 @@ public class AboutActivity extends Activity {
 			     
 			    emailIntent .putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"andriosapps@gmail.com"});
 			     
-			    emailIntent .putExtra(android.content.Intent.EXTRA_SUBJECT, "Army PFT Android App");
+			    emailIntent .putExtra(android.content.Intent.EXTRA_SUBJECT, "Fleet Knowledge Android App");
 			     
 			    //emailIntent .putExtra(android.content.Intent.EXTRA_TEXT, myBodyText);
 			     

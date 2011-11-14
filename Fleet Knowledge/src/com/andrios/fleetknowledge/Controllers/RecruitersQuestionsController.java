@@ -121,11 +121,7 @@ public class RecruitersQuestionsController extends Activity {
 	    	cursor = mDbAdapter.fetchAllQuestions();
 	    	startManagingCursor(cursor);
 	    	
-	    	if(cursor.getCount() < 5){
-	    		buildBaseQuestions();
-	    		fillData();
-	    		
-	    	}else{
+	    	
 	    		String[] from = new String[] {AndriosDbAdapter.KEY_QUESTION, AndriosDbAdapter.KEY_ASKED};
 		    	int[] to = new int[] {R.id.question_list_item_questionLBL, R.id.question_list_item_askedIMG};
 		    	//String[] categories = new String[]{CrisisDbAdapter.KEY_CATEGORY};
@@ -136,7 +132,7 @@ public class RecruitersQuestionsController extends Activity {
 		    	notes = new SimpleCursorAdapter(this, R.layout.list_item_question, cursor, from, to);
 		    	notes.setViewBinder(new MyViewBinder());
 		    	listView.setAdapter(notes);
-	    	}
+	    	
 	    	
 	    }
 	 
@@ -151,28 +147,7 @@ public class RecruitersQuestionsController extends Activity {
 	    	fillData();
 	    }
 	 
-	 private void buildBaseQuestions(){
-		 mDbAdapter.createQuestion("How long do I have to enlist for? What's the minimum commitment? ", 0, "");
-		 mDbAdapter.createQuestion("Am I eligible for any special enlistment programs or bonuses?", 0, "");
-		 mDbAdapter.createQuestion("What do I have to score on the Armed Services Vocational Aptitude Battery (ASVAB) test to qualify?", 0, "");
-		 mDbAdapter.createQuestion("What are the major differences in pay, benefits and job opportunities between services? ", 0, "");
-		 mDbAdapter.createQuestion("Do you have films or literature about military life and particular jobs? ", 0, "");
-		 mDbAdapter.createQuestion("How long is basic training? Where is it? What is it like?", 0, "");
-		 mDbAdapter.createQuestion("What physical fitness requirements must I meet to enter the military and succeed in basic training?", 0, "");
-		 mDbAdapter.createQuestion("What jobs are available? ", 0, "");
-		 mDbAdapter.createQuestion("What are the possibilities for remote or overseas duty stations?", 0, "");
-		 mDbAdapter.createQuestion("What are the training and advancement opportunities for jobs that I'm eligible for?", 0, "");
-		 mDbAdapter.createQuestion("What would pay be like?", 0, "");
-		 mDbAdapter.createQuestion("Do I get paid while in training?", 0, "");
-		 mDbAdapter.createQuestion("How much money can I get for college?", 0, "");
-		 mDbAdapter.createQuestion("Can I take college courses or other training programs while in the military?", 0, "");
-		 mDbAdapter.createQuestion("Are there any upcoming military events in the area, such as airshows, fleet weeks, etc.? ", 0, "");
-		 mDbAdapter.createQuestion("Can a friend and I go to basic training together?", 0, "");
-		 mDbAdapter.createQuestion("What are the haircut or other appearance standards that will apply to me?", 0, "");
-		 mDbAdapter.createQuestion("What's the delayed entry program?", 0, "");
-		 mDbAdapter.createQuestion("What are the next steps?", 0, "");
-		 mDbAdapter.createQuestion("How can I get more information?", 1, "");
-	 }
+
 	 
 	 
 	 

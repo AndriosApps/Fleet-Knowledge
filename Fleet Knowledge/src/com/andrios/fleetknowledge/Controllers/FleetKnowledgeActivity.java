@@ -22,6 +22,7 @@ public class FleetKnowledgeActivity extends Activity {
 	Button musicBTN;
 	Button creedsBTN;
 	Button toolsBTN;
+	Button aboutBTN;
 	AndriosDatabaseHelper helper;
 	
     /** Called when the activity is first created. */
@@ -32,11 +33,11 @@ public class FleetKnowledgeActivity extends Activity {
         setContentView(R.layout.main);
         helper = new AndriosDatabaseHelper(this);
         try{
-        	System.out.println("CREATE DATABASE");
         	helper.createDataBase();
         }catch(Exception e){
         	e.printStackTrace();
         }
+        AppRater.app_launched(this);
         setConnections();
         setOnClickListeners();
     }
@@ -47,6 +48,7 @@ public class FleetKnowledgeActivity extends Activity {
 		musicBTN = (Button) findViewById(R.id.mainViewMusicBTN);
 		creedsBTN = (Button) findViewById(R.id.mainViewCreedsBTN);
 		toolsBTN = (Button) findViewById(R.id.mainViewToolsBTN);
+		aboutBTN = (Button) findViewById(R.id.mainViewAboutBTN);
 		
 	}
 
@@ -99,6 +101,17 @@ public class FleetKnowledgeActivity extends Activity {
 
 			public void onClick(View v) {
 				Intent intent = new Intent(v.getContext(), ToolsController.class);
+				
+				startActivity(intent);
+				
+			}
+			
+		});
+		
+		aboutBTN.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				Intent intent = new Intent(v.getContext(), AboutActivity.class);
 				
 				startActivity(intent);
 				

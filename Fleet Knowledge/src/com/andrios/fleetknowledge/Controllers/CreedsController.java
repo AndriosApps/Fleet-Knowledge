@@ -114,11 +114,7 @@ public class CreedsController extends Activity {
 	    	cursor = mDbAdapter.fetchAllCreeds();
 	    	startManagingCursor(cursor);
 	    	
-	    	if(cursor.getCount() < 2){
-	    		buildBaseCreeds();
-	    		fillData();
-	    		
-	    	}else{
+	    	
 	    		String[] from = new String[] {AndriosDbAdapter.KEY_TITLE, AndriosDbAdapter.KEY_KNOWN};
 		    	int[] to = new int[] {R.id.question_list_item_questionLBL, R.id.question_list_item_askedIMG};
 		    	//String[] categories = new String[]{CrisisDbAdapter.KEY_CATEGORY};
@@ -129,7 +125,7 @@ public class CreedsController extends Activity {
 		    	notes = new SimpleCursorAdapter(this, R.layout.list_item_question, cursor, from, to);
 		    	notes.setViewBinder(new MyCreedsViewBinder());
 		    	listView.setAdapter(notes);
-	    	}
+	    	
 	    	
 	    }
 	 
@@ -144,15 +140,7 @@ public class CreedsController extends Activity {
 	    	fillData();
 	    }
 	 
-	 private void buildBaseCreeds(){
-		 final Resources r = Resources.getSystem();
-		 mDbAdapter.createCreed("Sailors Creed", getResources().getString(R.string.creed_sailorscreed), 0);
-		 mDbAdapter.createCreed("Petty Officer's Creed", getResources().getString(R.string.creed_pocreed), 0);
-		 mDbAdapter.createCreed("Cheif Petty Officer's Creed", getResources().getString(R.string.creed_cpocreed), 0);
-		 mDbAdapter.createCreed("Hospital Corpsman Pledge", getResources().getString(R.string.creed_corpsmancreed), 0);
-		 mDbAdapter.createCreed("Master at Arms Creed", getResources().getString(R.string.creed_macreed), 0);
-		 
-	 }
+
 	 
 	 
 	 
