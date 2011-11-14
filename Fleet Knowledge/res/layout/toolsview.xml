@@ -37,6 +37,14 @@
                     android:layout_height="50dp"
                     android:background="@drawable/icon_award"
                     android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Military Awards"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -53,6 +61,14 @@
                     android:layout_height="50dp"
                     android:background="@drawable/icon_pfa"
                     android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Navy PFA"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
             </LinearLayout>
         </TableRow>
 
@@ -78,6 +94,13 @@
                     android:background="@drawable/icon_prt"
                     android:text="@string/empty" />
 
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRT Calculator"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -94,6 +117,13 @@
                     android:layout_height="50dp"
                     android:background="@drawable/icon_bca"
                     android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BCA Calculator"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
             </LinearLayout>
         </TableRow>
