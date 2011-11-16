@@ -9,6 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.andrios.fleetknowledge.R;
+import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -58,6 +59,7 @@ public class MusicController extends Activity {
 	TableRow seabees_BTN;
 	TableRow waves_BTN;
 	TableRow destroyermen_BTN;
+	GoogleAnalyticsTracker tracker;
 	
 	 int i = 0;
 	
@@ -74,7 +76,22 @@ public class MusicController extends Activity {
         
         setConnections();
         setOnClickListeners();
-    }
+        setTracker();
+        }
+      
+       	private void setTracker() {
+       		tracker = GoogleAnalyticsTracker.getInstance();
+       		tracker.start(this.getString(R.string.ga_api_key),
+       				getApplicationContext());
+       	}
+
+       	@Override
+       	public void onResume() {
+       		super.onResume();
+       		tracker.trackPageView("/" + this.getLocalClassName());
+       	}
+
+       
 
 	private void setConnections() {
 		anchors_aweighBTN = (TableRow) findViewById(R.id.musicViewAnchorsAweighTableRow);
@@ -400,6 +417,7 @@ private void open(String filename, final View v){
 			mp.release();
 			
 		}
+		tracker.dispatch();
 	}
 
 	

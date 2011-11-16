@@ -2,6 +2,7 @@ package com.andrios.fleetknowledge.Controllers;
 
 import com.andrios.fleetknowledge.R;
 import com.andrios.fleetknowledge.R.layout;
+import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,7 +19,7 @@ public class ToolsController extends Activity {
 	Button pfaBTN;
 	Button prtBTN;
 	Button bcaBTN;
-	
+	GoogleAnalyticsTracker tracker;
 	
     /** Called when the activity is first created. */
     @Override
@@ -29,7 +30,26 @@ public class ToolsController extends Activity {
         
         setConnections();
         setOnClickListeners();
-    }
+        setTracker();
+        }
+      
+       	private void setTracker() {
+       		tracker = GoogleAnalyticsTracker.getInstance();
+       		tracker.start(this.getString(R.string.ga_api_key),
+       				getApplicationContext());
+       	}
+
+       	@Override
+       	public void onResume() {
+       		super.onResume();
+       		tracker.trackPageView("/" + this.getLocalClassName());
+       	}
+
+       	@Override
+       	public void onPause() {
+       		super.onPause();
+       		tracker.dispatch();
+       	}
     
     private void setConnections() {
 		awardsBTN = (Button) findViewById(R.id.toolsViewAwardsBTN);

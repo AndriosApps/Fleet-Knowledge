@@ -2,6 +2,7 @@ package com.andrios.fleetknowledge.Controllers;
 
 
 import com.andrios.fleetknowledge.R;
+import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,6 +16,7 @@ import android.widget.Button;
 public class RecruitersController extends Activity {
 	Button questionsBTN;
 	Button locationBTN;
+	GoogleAnalyticsTracker tracker;
 	
     /** Called when the activity is first created. */
     @Override
@@ -25,7 +27,26 @@ public class RecruitersController extends Activity {
         
         setConnections();
         setOnClickListeners();
-    }
+        setTracker();
+        }
+      
+       	private void setTracker() {
+       		tracker = GoogleAnalyticsTracker.getInstance();
+       		tracker.start(this.getString(R.string.ga_api_key),
+       				getApplicationContext());
+       	}
+
+       	@Override
+       	public void onResume() {
+       		super.onResume();
+       		tracker.trackPageView("/" + this.getLocalClassName());
+       	}
+
+       	@Override
+       	public void onPause() {
+       		super.onPause();
+       		tracker.dispatch();
+       	}
 
 	private void setConnections() {
 		questionsBTN = (Button) findViewById(R.id.recruitersViewQuestionsBTN);

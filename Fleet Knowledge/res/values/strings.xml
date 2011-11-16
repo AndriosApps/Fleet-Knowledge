@@ -3,6 +3,10 @@
 
     <string name="hello">Hello World, FleetKnowledgeActivity!</string>
     <string name="app_name">Fleet Knowledge</string>
+    <string name="ga_api_key">UA-23366060-10</string>
+    
+        
+        
     <string name="recruiters">Recruiters</string>
     <string name="recruitersquestions">Recruiter Questions</string>
     <string name="empty"></string>
@@ -14,5 +18,6 @@
     <string name="title_subs">Submarines</string>
     <string name="title_aircraft">Aircraft</string>
     <string name="title_about">Developer</string>
+    <string name="title_missiles">Missiles</string>
    
     </resources>

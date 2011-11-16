@@ -3,6 +3,7 @@ package com.andrios.fleetknowledge.Controllers;
 import java.util.List;
 
 import com.andrios.fleetknowledge.R;
+import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
 import android.content.Context;
@@ -20,7 +21,7 @@ public class AboutActivity extends Activity {
 	
 	
 	Button facebookBTN, twitterBTN, emailBTN, marketBTN;
-	//GoogleAnalyticsTracker tracker;
+	GoogleAnalyticsTracker tracker;
 	
     /** Called when the activity is first created. */
     @Override
@@ -31,26 +32,28 @@ public class AboutActivity extends Activity {
         
         setConnections();
         setOnClickListeners();
-        //setTracker();
-    }
+        setTracker();
+        }
+      
+       	private void setTracker() {
+       		tracker = GoogleAnalyticsTracker.getInstance();
+       		tracker.start(this.getString(R.string.ga_api_key),
+       				getApplicationContext());
+       	}
+
+       	@Override
+       	public void onResume() {
+       		super.onResume();
+       		tracker.trackPageView("/" + this.getLocalClassName());
+       	}
+
+       	@Override
+       	public void onPause() {
+       		super.onPause();
+       		tracker.dispatch();
+       	}
     
-	private void setTracker() {
-		//tracker = GoogleAnalyticsTracker.getInstance();
-		//tracker.start(this.getString(R.string.ga_api_key),
-			//	getApplicationContext());
-	}
 
-	@Override
-	public void onResume() {
-		super.onResume();
-		//tracker.trackPageView("/" + this.getLocalClassName());
-	}
-
-	@Override
-	public void onPause() {
-		super.onPause();
-		//tracker.dispatch();
-	}
 
 
 	private void setConnections() {

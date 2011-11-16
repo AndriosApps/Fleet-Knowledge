@@ -10,6 +10,7 @@ import com.andrios.fleetknowledge.Database.AndriosDbAdapter;
 import com.andrios.fleetknowledge.Models.Question;
 import com.andrios.fleetknowledge.Models.Ship;
 import com.andrios.fleetknowledge.R.layout;
+import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -40,7 +41,7 @@ public class RecceShipsController extends Activity {
 	ArrayList<Ship> shipList;
 	Cursor cursor;
 	Button newBTN;
-	
+	GoogleAnalyticsTracker tracker;
 	
 	
 	
@@ -57,7 +58,26 @@ public class RecceShipsController extends Activity {
 
 		setConnections();
 		setOnClickListeners();
-    }
+	    setTracker();
+	    }
+	  
+	   	private void setTracker() {
+	   		tracker = GoogleAnalyticsTracker.getInstance();
+	   		tracker.start(this.getString(R.string.ga_api_key),
+	   				getApplicationContext());
+	   	}
+
+	   	@Override
+	   	public void onResume() {
+	   		super.onResume();
+	   		tracker.trackPageView("/" + this.getLocalClassName());
+	   	}
+
+	   	@Override
+	   	public void onPause() {
+	   		super.onPause();
+	   		tracker.dispatch();
+	   	}
 
 	
 

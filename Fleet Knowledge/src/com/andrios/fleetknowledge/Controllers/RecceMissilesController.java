@@ -3,12 +3,12 @@ package com.andrios.fleetknowledge.Controllers;
 import java.util.ArrayList;
 
 import com.andrios.fleetknowledge.R;
-import com.andrios.fleetknowledge.Adapters.ExpandableShipAdapter;
+import com.andrios.fleetknowledge.Adapters.ExpandableMissileAdapter;
 import com.andrios.fleetknowledge.Adapters.MyCreedsViewBinder;
 import com.andrios.fleetknowledge.Adapters.MyViewBinder;
 import com.andrios.fleetknowledge.Database.AndriosDbAdapter;
 import com.andrios.fleetknowledge.Models.Question;
-import com.andrios.fleetknowledge.Models.Ship;
+import com.andrios.fleetknowledge.Models.Missile;
 import com.andrios.fleetknowledge.R.layout;
 import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
@@ -26,22 +26,24 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ExpandableListView.OnChildClickListener;
+import android.widget.TextView;
 
-public class RecceSubsController extends Activity {
+public class RecceMissilesController extends Activity {
 	private static final int ACTIVITY_CREATE = 0;
 	private static final int ACTIVITY_EDIT = 1;
 	
 	AndriosDbAdapter mDbAdapter;
 	ExpandableListView listView;
-	ExpandableShipAdapter listAdapter;
-	ArrayList<Ship> subList;
+	ExpandableMissileAdapter listAdapter;
+	ArrayList<Missile> missileList;
 	Cursor cursor;
 	Button newBTN;
 	GoogleAnalyticsTracker tracker;
+	
+	
 	
 	
     /** Called when the activity is first created. */
@@ -81,19 +83,18 @@ public class RecceSubsController extends Activity {
 
 	private void setConnections() {
 		TextView titleLBL = (TextView) findViewById(R.id.recceShipsViewTitleLBL);
-		titleLBL.setText("US Navy Submarines");
-		newBTN = (Button) findViewById(R.id.creedsNewBTN);
+		titleLBL.setText("US Navy Missiles");
 		listView = (ExpandableListView) findViewById(R.id.recceShipViewExpandableListView);
 		fillData();
-		listAdapter = new ExpandableShipAdapter(this, new ArrayList<String>(), new ArrayList<ArrayList<Ship>>());
+		listAdapter = new ExpandableMissileAdapter(this, new ArrayList<String>(), new ArrayList<ArrayList<Missile>>());
 		listView.setAdapter(listAdapter);
-		addSubsToAdapter();
+		addMissilesToAdapter();
 	}
 	
-	private void addSubsToAdapter(){
+	private void addMissilesToAdapter(){
 		
-		for(int i = 0; i < subList.size(); i++){
-			listAdapter.addItem(subList.remove(0));
+		for(int i = 0; i < missileList.size(); i++){
+			listAdapter.addItem(missileList.remove(0));
 			i--;
 		}
 	}
@@ -103,8 +104,8 @@ public class RecceSubsController extends Activity {
 
 			public boolean onChildClick(ExpandableListView parent, View v,
 					int groupPosition, int childPosition, long id) {
-				Intent intent = new Intent(v.getContext(), RecceSubsDetailsController.class);
-				intent.putExtra("sub", (Ship) listAdapter.getChild(groupPosition, childPosition));
+				Intent intent = new Intent(v.getContext(), RecceMissilesDetailsController.class);
+				intent.putExtra("missile", (Missile) listAdapter.getChild(groupPosition, childPosition));
 				startActivity(intent);
 				
 				return false;
@@ -115,15 +116,14 @@ public class RecceSubsController extends Activity {
 	}
 	
 	 private void fillData(){
-	    	cursor = mDbAdapter.fetchAllSubs();
+	    	cursor = mDbAdapter.fetchAllMissiles();
 	    	startManagingCursor(cursor);
 	    	
 	    	
-	    	
 		    	cursor.moveToFirst();
-		    	subList = new ArrayList<Ship>();
+		    	missileList = new ArrayList<Missile>();
 		        while (cursor.isAfterLast() == false) {
-		            subList.add(new Ship(cursor, RecceSubsController.this));
+		            missileList.add(new Missile(cursor, RecceMissilesController.this));
 		       	    cursor.moveToNext();
 		        }
 		        cursor.close();
@@ -142,7 +142,7 @@ public class RecceSubsController extends Activity {
 	    	fillData();
 	    }
 	 
-	 
+
 	 
 	 
 	 

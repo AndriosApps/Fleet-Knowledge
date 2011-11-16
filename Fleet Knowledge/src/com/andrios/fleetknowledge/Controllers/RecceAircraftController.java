@@ -10,6 +10,7 @@ import com.andrios.fleetknowledge.R;
 import com.andrios.fleetknowledge.Adapters.ExpandableAircraftAdapter;
 import com.andrios.fleetknowledge.Database.AndriosDbAdapter;
 import com.andrios.fleetknowledge.Models.Aircraft;
+import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -34,6 +35,7 @@ public class RecceAircraftController extends Activity {
 	ArrayList<Aircraft> shipList;
 	Cursor cursor;
 	Button newBTN;
+	GoogleAnalyticsTracker tracker;
 	
 	
 	
@@ -49,9 +51,26 @@ public class RecceAircraftController extends Activity {
 
 		setConnections();
 		setOnClickListeners();
-		
+	    setTracker();
+	    }
+	  
+	   	private void setTracker() {
+	   		tracker = GoogleAnalyticsTracker.getInstance();
+	   		tracker.start(this.getString(R.string.ga_api_key),
+	   				getApplicationContext());
+	   	}
 
-    }
+	   	@Override
+	   	public void onResume() {
+	   		super.onResume();
+	   		tracker.trackPageView("/" + this.getLocalClassName());
+	   	}
+
+	   	@Override
+	   	public void onPause() {
+	   		super.onPause();
+	   		tracker.dispatch();
+	   	}
 
 	
 

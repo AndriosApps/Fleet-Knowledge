@@ -401,4 +401,90 @@ public class AndriosDbAdapter {
 				}
 			
 			
+				
+
+				// MISSILE
+				// MISSILE STATIC VARIABLES
+					public static final String DATABASE_MISSILE_TABLE = "missiles";
+
+				public static final String KEY_MISSILE_LINK = "link";
+				public static final String KEY_MISSILE_IMAGE = "image";
+				public static final String KEY_MISSILE_PRICE = "price";
+				public static final String KEY_MISSILE_FEATURES = "features";
+				public static final String KEY_MISSILE_BACKGROUND = "background";
+				public static final String KEY_MISSILE_DESCRIPTION = "description";
+				public static final String KEY_MISSILE_NAME = "name";
+				public static final String KEY_MISSILE_FUNCTION = "function";
+				public static final String KEY_MISSILE_DEPLOY_DATE = "deploy_date";
+				public static final String KEY_MISSILE_PROPULSION = "propulsion";
+				public static final String KEY_MISSILE_DIMENSIONS = "dimensions";
+				public static final String KEY_MISSILE_PERFORMANCE = "performance";
+
+				public static final String KEY_MISSILE_WARHEAD = "warhead";
+				public static final String KEY_MISSILE_PLATFORM = "platforms";
+					/**
+					 * Create a new crisis information. If the information is sucessfully created
+					 * return the new rowID for that set, otherwise return a -1 to indicate failure.
+					 */
+					public long createMissile(String link, String image, String price, String features, String background, String description, String name, String function, String deploy_date, String propulsion, String dimensions, String performance, String warhead, String platforms){
+						ContentValues initialValues = createMissileContentValues(link, image, price, features, background, description, name, function, deploy_date, propulsion, dimensions, performance, warhead, platforms);
+						return database.insert(DATABASE_MISSILE_TABLE, null, initialValues);
+					}
+					
+					/**
+					 * Update the information
+					 */
+					public boolean updateMissile(long rowId, String link, String image, String price, String features, String background, String description, String name, String function, String deploy_date, String propulsion, String dimensions, String performance, String warhead, String platforms){
+						ContentValues updateValues = createMissileContentValues(link, image, price, features, background, description, name, function, deploy_date, propulsion, dimensions, performance, warhead, platforms);
+						return database.update(DATABASE_MISSILE_TABLE, updateValues, KEY_ROWID + "=" + rowId, null) >0;
+						
+					}
+					
+					/**
+					 * Deletes information
+					 */
+					public boolean deleteMissile(long rowId){
+						return database.delete(DATABASE_MISSILE_TABLE, KEY_ROWID + "=" + rowId, null)>0;
+					}
+					
+					/**
+					 * Return a Cursor over the list of all Information Sets in the database
+					 * @return Cursor over all Information Sets
+					 */
+					public Cursor fetchAllMissiles(){
+						return database.query(DATABASE_MISSILE_TABLE, new String[] {KEY_ROWID, KEY_MISSILE_LINK, KEY_MISSILE_IMAGE, KEY_MISSILE_PRICE, KEY_MISSILE_FEATURES, KEY_MISSILE_BACKGROUND, KEY_MISSILE_DESCRIPTION, KEY_MISSILE_NAME, KEY_MISSILE_FUNCTION, KEY_MISSILE_DEPLOY_DATE, KEY_MISSILE_PROPULSION,  KEY_MISSILE_DIMENSIONS,  KEY_MISSILE_PERFORMANCE,  KEY_MISSILE_WARHEAD,  KEY_MISSILE_PLATFORM}, null, null, null, null, null);
+					}
+					
+					/**
+					 * Return a Cursor positioned at the defined information set
+					 */
+					public Cursor fetchMissile(long rowId) throws SQLException{
+						Cursor mCursor = database.query(DATABASE_MISSILE_TABLE, new String[] {KEY_ROWID, KEY_MISSILE_LINK, KEY_MISSILE_IMAGE, KEY_MISSILE_PRICE, KEY_MISSILE_FEATURES, KEY_MISSILE_BACKGROUND, KEY_MISSILE_DESCRIPTION, KEY_MISSILE_NAME, KEY_MISSILE_FUNCTION, KEY_MISSILE_DEPLOY_DATE, KEY_MISSILE_PROPULSION,  KEY_MISSILE_DIMENSIONS,  KEY_MISSILE_PERFORMANCE,  KEY_MISSILE_WARHEAD,  KEY_MISSILE_PLATFORM}, KEY_ROWID + "=" + rowId, null, null, null, null, null);
+						if(mCursor != null){
+							mCursor.moveToFirst();
+						}
+						return mCursor;
+					}
+					
+					private ContentValues createMissileContentValues(String link, String image, String price, String features, String background, String description, String name, String function, String deploy_date, String propulsion, String dimensions, String performance, String warhead, String platforms){
+						ContentValues values = new ContentValues();
+						values.put(KEY_MISSILE_LINK, link);
+						values.put(KEY_MISSILE_IMAGE, image);
+						values.put(KEY_MISSILE_PRICE, price);
+						values.put(KEY_MISSILE_FEATURES, features);
+						values.put(KEY_MISSILE_BACKGROUND, background);
+						values.put(KEY_MISSILE_DESCRIPTION, description);
+						values.put(KEY_MISSILE_NAME, name);
+						values.put(KEY_MISSILE_FUNCTION, function);
+						values.put(KEY_MISSILE_DEPLOY_DATE, deploy_date);
+						values.put(KEY_MISSILE_PROPULSION, propulsion);
+						values.put(KEY_MISSILE_DIMENSIONS, dimensions);
+						values.put(KEY_MISSILE_PERFORMANCE, performance);
+						values.put(KEY_MISSILE_WARHEAD, warhead);
+						values.put(KEY_MISSILE_PLATFORM, platforms);
+						
+						return values;
+					}
+				
+				
 }

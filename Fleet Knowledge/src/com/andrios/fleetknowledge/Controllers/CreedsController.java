@@ -8,6 +8,7 @@ import com.andrios.fleetknowledge.Adapters.MyViewBinder;
 import com.andrios.fleetknowledge.Database.AndriosDbAdapter;
 import com.andrios.fleetknowledge.Models.Question;
 import com.andrios.fleetknowledge.R.layout;
+import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -34,6 +35,7 @@ public class CreedsController extends Activity {
 	SimpleCursorAdapter notes;
 	ArrayList<Question> questionList;
 	Cursor cursor;
+	GoogleAnalyticsTracker tracker;
 	
 	
     /** Called when the activity is first created. */
@@ -53,7 +55,26 @@ public class CreedsController extends Activity {
 
 		setConnections();
 		setOnClickListeners();
-    }
+	    setTracker();
+	    }
+	  
+	   	private void setTracker() {
+	   		tracker = GoogleAnalyticsTracker.getInstance();
+	   		tracker.start(this.getString(R.string.ga_api_key),
+	   				getApplicationContext());
+	   	}
+
+	   	@Override
+	   	public void onResume() {
+	   		super.onResume();
+	   		tracker.trackPageView("/" + this.getLocalClassName());
+	   	}
+
+	   	@Override
+	   	public void onPause() {
+	   		super.onPause();
+	   		tracker.dispatch();
+	   	}
 
 	
 

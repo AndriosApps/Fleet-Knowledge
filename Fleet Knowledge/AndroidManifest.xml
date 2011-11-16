@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.andrios.fleetknowledge" 
       android:installLocation="preferExternal"  
-android:versionCode="1"
-    android:versionName="1.0" >
+android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk android:minSdkVersion="4" />
 
@@ -34,6 +34,8 @@ android:versionCode="1"
              <activity  android:name=".Controllers.RecceShipsDetailsController" > </activity>
              <activity  android:name=".Controllers.RecceSubsController" > </activity>
              <activity  android:name=".Controllers.RecceSubsDetailsController" > </activity>
+             <activity  android:name=".Controllers.RecceMissilesController" > </activity>
+             <activity  android:name=".Controllers.RecceMissilesDetailsController" > </activity>
              <activity  android:name=".Controllers.RecceController" > </activity>
              <activity  android:name=".Controllers.MusicController" > </activity>
              <activity  android:name=".Controllers.CreedsController" > </activity>
