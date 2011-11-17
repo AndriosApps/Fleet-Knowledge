@@ -196,7 +196,7 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
 		System.out.println("Upgrade From :" + oldVersion + " to: " + newVersion);
 
 		System.out.println("DB VERSION: " + db.getVersion());
-		if(oldVersion < 2 && !firstRun){
+		if(oldVersion == 1 && !firstRun){
 			// Create a temp Database (With old database)
 			try {
 				duplicateDataBase();
@@ -272,12 +272,18 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
 				db.insert("missiles", null, values);
 				c.moveToNext();
 			}
-		}
-			
 			
 			db.setVersion(2);
 			tempDataBase.close();
+		}
+		
+	
+			
+		// IF oldVersion == 2 && !firstRun	
+			
 	}
+	
+	
 
 	
  

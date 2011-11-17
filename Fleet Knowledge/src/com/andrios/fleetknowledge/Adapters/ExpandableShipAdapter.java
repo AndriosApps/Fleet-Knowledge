@@ -43,7 +43,6 @@ public class ExpandableShipAdapter extends BaseExpandableListAdapter {
      */
     public void addItem(Ship s) {
         if (!groups.contains(s.getType())) {
-        	System.out.println("Adding Group: " + s.getType());
             groups.add(s.getType());
         }
         int index = groups.indexOf(s.getType());
@@ -116,7 +115,6 @@ public class ExpandableShipAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView,
             ViewGroup parent) {
         String group = (String) getGroup(groupPosition);
-        System.out.println("Group: " + group + " Position: " + groupPosition);
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);

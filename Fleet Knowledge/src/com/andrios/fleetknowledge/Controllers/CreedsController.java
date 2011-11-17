@@ -45,13 +45,8 @@ public class CreedsController extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.creedsview);
         mDbAdapter = new AndriosDbAdapter(this);
-		mDbAdapter.open();
-		
-//		long id = mDbAdapter.createQuestion("What is a Test Question?", 0);
-//		System.out.println("ID " + id);
-//		Cursor info = mDbAdapter.fetchQuestion(id);
-//		System.out.println(info.getString(info.getColumnIndexOrThrow(AndriosDbAdapter.KEY_QUESTION)));
-//		
+        mDbAdapter.open();
+
 
 		setConnections();
 		setOnClickListeners();
@@ -68,15 +63,17 @@ public class CreedsController extends Activity {
 	   	public void onResume() {
 	   		super.onResume();
 	   		tracker.trackPageView("/" + this.getLocalClassName());
+	   		
 	   	}
 
 	   	@Override
 	   	public void onPause() {
 	   		super.onPause();
 	   		tracker.dispatch();
+	   		
+	   		
 	   	}
 
-	
 
 	private void setConnections() {
 		listView = (ListView) findViewById(R.id.creedsListView);

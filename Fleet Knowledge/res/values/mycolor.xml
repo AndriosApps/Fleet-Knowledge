@@ -8,5 +8,7 @@
 <color name="black">#000000</color>
 <color name="white">#ffffff</color>
 <color name="tactical_green">#00ff00</color>
+<color name="navy_blue">#0000ff</color>
+<color name="navy_gold">#ffff33</color>
     
 </resources>

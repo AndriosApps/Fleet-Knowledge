@@ -3,12 +3,14 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
+
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:gravity="center_vertical"
+        android:layout_height="30dp"
+        android:background="@color/navy_blue"
+        android:gravity="center|center_vertical"
         android:text="@string/title_tools"
+        android:textColor="@color/navy_gold"
         android:textSize="22dp" />
 
     <TableLayout

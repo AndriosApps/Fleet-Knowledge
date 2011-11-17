@@ -18,11 +18,8 @@ public class MyViewBinder implements SimpleCursorAdapter.ViewBinder{
 			ImageView typeIcon = (ImageView) view;
 			String asked = cursor.getString(columnIndex);
 			if(asked.equals("1")){
-				System.out.println("asked " + asked);
 				typeIcon.setImageResource(R.drawable.icon_checked);
 			}else{
-
-				System.out.println("not asked " + asked);
 				typeIcon.setImageResource(R.drawable.icon_unchecked);
 			}
 		break;

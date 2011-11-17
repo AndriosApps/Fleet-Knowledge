@@ -45,13 +45,8 @@ public class RecruitersQuestionsController extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.recruitersquestionsview);
         mDbAdapter = new AndriosDbAdapter(this);
-		mDbAdapter.open();
+        mDbAdapter.open();
 		
-//		long id = mDbAdapter.createQuestion("What is a Test Question?", 0);
-//		System.out.println("ID " + id);
-//		Cursor info = mDbAdapter.fetchQuestion(id);
-//		System.out.println(info.getString(info.getColumnIndexOrThrow(AndriosDbAdapter.KEY_QUESTION)));
-//		
 
 		setConnections();
 		setOnClickListeners();
@@ -67,6 +62,7 @@ public class RecruitersQuestionsController extends Activity {
 	   	@Override
 	   	public void onResume() {
 	   		super.onResume();
+	   		
 	   		tracker.trackPageView("/" + this.getLocalClassName());
 	   	}
 

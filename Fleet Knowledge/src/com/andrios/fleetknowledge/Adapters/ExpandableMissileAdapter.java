@@ -43,7 +43,6 @@ public class ExpandableMissileAdapter extends BaseExpandableListAdapter {
      */
     public void addItem(Missile s) {
         if (!groups.contains(s.getFunction())) {
-        	System.out.println("Adding Group: " + s.getFunction());
             groups.add(s.getFunction());
         }
         int index = groups.indexOf(s.getFunction());
@@ -116,7 +115,6 @@ public class ExpandableMissileAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView,
             ViewGroup parent) {
         String group = (String) getGroup(groupPosition);
-        System.out.println("Group: " + group + " Position: " + groupPosition);
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);

@@ -60,7 +60,7 @@ public class FleetKnowledgeActivity extends Activity {
    	@Override
    	public void onPause() {
    		super.onPause();
-   		//tracker.dispatch();
+   		tracker.dispatch();
    	}
 
 	private void setConnections() {
