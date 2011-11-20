@@ -10,5 +10,7 @@
 <color name="tactical_green">#00ff00</color>
 <color name="navy_blue">#0000ff</color>
 <color name="navy_gold">#ffff33</color>
+<color name="haze_grey">#A6ADB4</color>
+<color name="deck_grey">#5F656A</color>
     
 </resources>

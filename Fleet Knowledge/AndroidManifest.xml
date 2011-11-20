@@ -42,7 +42,11 @@ android:versionCode="3"
              <activity  android:name=".Controllers.CreedsDetailsController" > </activity>
              <activity  android:name=".Controllers.ToolsController" > </activity>
              <activity  android:name=".Controllers.RecruitersController" > </activity>
+             <activity  android:name=".Controllers.KnowledgeController" > </activity>
+             <activity  android:name=".Controllers.KnowledgeDetailsController" > </activity>
              <activity  android:name=".Controllers.AboutActivity" > </activity>
+             <activity  android:name=".Controllers.RankController" > </activity>
+             <activity  android:name=".Controllers.RankDetailsController" > </activity>
     </application>
 
 </manifest>

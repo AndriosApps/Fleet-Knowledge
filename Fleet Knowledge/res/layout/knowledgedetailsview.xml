@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/knowledgeDetailsViewHeaderTXT"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/navy_blue"
+        android:gravity="center|center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/navy_gold"
+        android:textSize="22dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/knowledgeDetailsViewBodyTXT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

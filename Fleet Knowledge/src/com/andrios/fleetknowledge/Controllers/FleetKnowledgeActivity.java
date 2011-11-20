@@ -21,7 +21,7 @@ public class FleetKnowledgeActivity extends Activity {
 	Button recruitersBTN;
 	Button recceBTN;
 	Button musicBTN;
-	Button creedsBTN;
+	Button knowledgeBTN;
 	Button toolsBTN;
 	Button aboutBTN;
 	AndriosDatabaseHelper helper;
@@ -67,7 +67,7 @@ public class FleetKnowledgeActivity extends Activity {
 		recruitersBTN = (Button) findViewById(R.id.mainViewRecruiterBTN);
 		recceBTN = (Button) findViewById(R.id.mainViewRecceBTN);
 		musicBTN = (Button) findViewById(R.id.mainViewMusicBTN);
-		creedsBTN = (Button) findViewById(R.id.mainViewCreedsBTN);
+		knowledgeBTN = (Button) findViewById(R.id.mainViewKnowledgeBTN);
 		toolsBTN = (Button) findViewById(R.id.mainViewToolsBTN);
 		aboutBTN = (Button) findViewById(R.id.mainViewAboutBTN);
 		
@@ -107,10 +107,10 @@ public class FleetKnowledgeActivity extends Activity {
 			
 		});
 		
-		creedsBTN.setOnClickListener(new OnClickListener(){
+		knowledgeBTN.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
-				Intent intent = new Intent(v.getContext(), CreedsController.class);
+				Intent intent = new Intent(v.getContext(), KnowledgeController.class);
 				
 				startActivity(intent);
 				

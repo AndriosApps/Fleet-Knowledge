@@ -19,5 +19,23 @@
     <string name="title_aircraft">Aircraft</string>
     <string name="title_about">Developer</string>
     <string name="title_missiles">Missiles</string>
+    <string name="title_general_orders">General Orders</string>
+    <string name="general_orders">1. To take charge of this post and all government property in view.
+    \n\n2. To walk my post in a military manner, keeping always on the alert, and observing everything that takes place within sight or hearing.
+    \n\n3. To report all violations of orders I am instructed to enforce.
+    \n\n4. To repeat all calls from posts more distant from the guard house than my own.
+    \n\n5. To quit my post only when properly relieved.
+    \n\n6. To receive, obey and pass on to the sentry who relieves me, all orders from the Commanding Officer, Command Duty Officer, Officer of the Deck, and Officers and Petty Officers of the Watch only.
+    \n\n7. To talk to no one except in the line of duty.
+    \n\n8. To give the alarm in case of fire or disorder.
+    \n\n9. To call the Officer of the Deck in any case not covered by instructions.
+    \n\n10. To salute all officers and all colors and standards not cased.
+    \n\n11. To be especially watchful at night, and, during the time for challenging, to challenge all persons on or near my post and to allow no one to pass without proper authority.
+</string>
+    <string name="title_knowledge">Knowledge</string>
+    <string name="title_enlisted">Enlisted</string>
+    <string name="title_warrant">Warrant Officer</string>
+    <string name="title_officer">Officer</string>
+    <string name="title_ranks">Ranks</string>
    
     </resources>
