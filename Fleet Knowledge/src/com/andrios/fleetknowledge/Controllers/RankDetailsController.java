@@ -13,7 +13,6 @@ import android.widget.TextView;
 public class RankDetailsController extends Activity {
 	
 	TextView bodyTXT;
-	TextView headerTXT;
 	
 	String title;
 	
@@ -26,20 +25,22 @@ public class RankDetailsController extends Activity {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         
-        
+
         
         getExtras();
         if(title.equals(getString(R.string.title_enlisted))){
-
+        	System.out.println("Setting enlisted View");
             setContentView(R.layout.rank_enlisted_view);
         }else if(title.equals(getString(R.string.title_warrant))){
+        	System.out.println("Setting enlisted View");
             setContentView(R.layout.rank_warrant_view);
         	
         }else if(title.equals(getString(R.string.title_officer))){
+        	System.out.println("Setting enlisted View");
             setContentView(R.layout.rank_officer_view);
         	
         }
-        setConnections();
+       
         setTracker();
     }
   
@@ -64,17 +65,7 @@ public class RankDetailsController extends Activity {
    	private void getExtras(){
    		Intent intent = this.getIntent();
    		title = intent.getStringExtra("rank");
-   		System.out.println("title: " + title);
    	}
 
-	private void setConnections() {
-		headerTXT = (TextView) findViewById(R.id.rankDetailsViewHeaderTXT);
-		//headerTXT.setText(title);
-		
-	}
 
-	private void setOnClickListeners() {
-		
-		
-	}
 }
