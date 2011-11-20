@@ -33,12 +33,12 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-
+
                 <Button
                     android:id="@+id/knowledgeViewGeneralOrdersBTN"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
-                    android:background="@drawable/button_music"
+                    android:background="@drawable/button_general_orders"
                     android:text="@string/empty" />
 
                 <TextView
@@ -87,12 +87,12 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-
+
                 <Button
                     android:id="@+id/knowledgeViewRanksBTN"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
-                    android:background="@drawable/button_music"
+                    android:background="@drawable/rank_e6_sleeve"
                     android:text="@string/empty" />
 
                 <TextView
