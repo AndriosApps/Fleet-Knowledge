@@ -95,6 +95,7 @@ public class RankController extends Activity {
 				intent.putExtra("rank", getString(R.string.title_officer));
 				startActivity(intent);
 				
+				
 			}
 			
 		});
