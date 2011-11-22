@@ -56,7 +56,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-
+
                 <Button
                     android:id="@+id/knowledgeViewCreedsBTN"
                     android:layout_width="75dp"
@@ -105,12 +105,70 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/LinearLayout05"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/knowledgeViewHistoryBTN"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/button_history"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_history"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
                 android:id="@+id/LinearLayout04"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/knowledgeViewAbbrBTN"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/button_abbreviations"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_abbreviations"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout06"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
             </LinearLayout>
         </TableRow>
 

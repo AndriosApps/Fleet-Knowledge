@@ -37,5 +37,7 @@
     <string name="title_warrant">Warrant Officer</string>
     <string name="title_officer">Officer</string>
     <string name="title_ranks">Ranks</string>
+    <string name="title_history">History</string>
+    <string name="title_abbreviations">Abbreviations</string>
    
     </resources>

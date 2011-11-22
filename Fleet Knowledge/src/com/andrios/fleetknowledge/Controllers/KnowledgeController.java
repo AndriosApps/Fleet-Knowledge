@@ -6,6 +6,7 @@ import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -21,6 +22,8 @@ public class KnowledgeController extends Activity {
 	Button generalOrdersBTN;
 	Button creedsBTN;
 	Button ranksBTN;
+	Button historyBTN;
+	Button abbrBTN;
 	
 	AndriosDatabaseHelper helper;
 	GoogleAnalyticsTracker tracker;
@@ -59,10 +62,36 @@ public class KnowledgeController extends Activity {
 		generalOrdersBTN = (Button) findViewById(R.id.knowledgeViewGeneralOrdersBTN);
 		creedsBTN = (Button) findViewById(R.id.knowledgeViewCreedsBTN);
 		ranksBTN = (Button) findViewById(R.id.knowledgeViewRanksBTN);
+		historyBTN = (Button) findViewById(R.id.knowledgeViewHistoryBTN);
+		abbrBTN = (Button) findViewById(R.id.knowledgeViewAbbrBTN);
 		
 	}
 
 	private void setOnClickListeners() {
+
+		abbrBTN.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse("http://www.history.navy.mil/books/OPNAV20-P1000/A.htm"));
+				startActivity(intent);
+				
+			}
+			
+		});
+		
+		historyBTN.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse("http://www.history.navy.mil/"));
+				startActivity(intent);
+				
+			}
+			
+		});
+		
+		
 		generalOrdersBTN.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
