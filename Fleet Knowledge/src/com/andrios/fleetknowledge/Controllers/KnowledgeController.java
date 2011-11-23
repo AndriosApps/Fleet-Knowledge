@@ -24,6 +24,7 @@ public class KnowledgeController extends Activity {
 	Button ranksBTN;
 	Button historyBTN;
 	Button abbrBTN;
+	Button cocBTN;
 	
 	AndriosDatabaseHelper helper;
 	GoogleAnalyticsTracker tracker;
@@ -64,11 +65,23 @@ public class KnowledgeController extends Activity {
 		ranksBTN = (Button) findViewById(R.id.knowledgeViewRanksBTN);
 		historyBTN = (Button) findViewById(R.id.knowledgeViewHistoryBTN);
 		abbrBTN = (Button) findViewById(R.id.knowledgeViewAbbrBTN);
+		//cocBTN = (Button) findViewById(R.id.knowledgeViewCocBTN);
 		
 	}
 
 	private void setOnClickListeners() {
 
+		/*cocBTN.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse("http://www.history.navy.mil/books/OPNAV20-P1000/A.htm"));
+				startActivity(intent);
+				
+			}
+			
+		});*/
+		
 		abbrBTN.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {

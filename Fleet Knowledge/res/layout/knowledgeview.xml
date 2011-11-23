@@ -144,7 +144,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-
+
                 <Button
                     android:id="@+id/knowledgeViewAbbrBTN"
                     android:layout_width="75dp"
@@ -162,7 +162,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/LinearLayout06"
+                android:id="@+id/LinearLayout07"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -170,6 +170,7 @@
                 android:orientation="vertical" >
 
             </LinearLayout>
+
         </TableRow>
 
     </TableLayout>
