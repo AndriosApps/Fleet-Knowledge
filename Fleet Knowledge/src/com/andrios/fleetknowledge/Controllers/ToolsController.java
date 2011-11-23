@@ -5,6 +5,7 @@ import com.andrios.fleetknowledge.R.layout;
 import com.google.android.apps.analytics.GoogleAnalyticsTracker;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,6 +20,8 @@ public class ToolsController extends Activity {
 	Button pfaBTN;
 	Button prtBTN;
 	Button bcaBTN;
+	Button payCalcBTN;
+	Button acronymsBTN;
 	GoogleAnalyticsTracker tracker;
 	
     /** Called when the activity is first created. */
@@ -56,10 +59,53 @@ public class ToolsController extends Activity {
 		pfaBTN = (Button) findViewById(R.id.toolsViewPFABTN);
 		prtBTN = (Button) findViewById(R.id.toolsViewPRTBTN);
 		bcaBTN = (Button) findViewById(R.id.toolsViewBCABTN);
+		payCalcBTN = (Button) findViewById(R.id.toolsViewPayCalcBTN);
+		acronymsBTN = (Button) findViewById(R.id.toolsViewAcronymsBTN);
 		
 	}
 
 	void setOnClickListeners() {
+		
+		acronymsBTN.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				try{
+					 Intent intent = new Intent("android.intent.action.MAIN");
+					    intent.setComponent(ComponentName.unflattenFromString("com.brandao.militaryacronyms/com.brandao.militaryacronyms.Main"));
+					    intent.addCategory("android.intent.category.LAUNCHER");
+					    startActivity(intent);
+
+			        }catch(Exception e){
+			                Intent i = new Intent(Intent.ACTION_VIEW);
+			                i.setData(Uri.parse("market://search?q=pname:com.brandao.militaryacronyms"));
+			                startActivity(i);
+			        }
+				
+			}
+			
+		});
+		
+		
+		payCalcBTN.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				try{
+					 Intent intent = new Intent("android.intent.action.MAIN");
+					    intent.setComponent(ComponentName.unflattenFromString("com.crashtestdummylimited.militarypaycalculatorfree/com.crashtestdummylimited.militarypaycalculatorfree.Splash"));
+					    intent.addCategory("android.intent.category.LAUNCHER");
+					    startActivity(intent);
+
+			        }catch(Exception e){
+			                Intent i = new Intent(Intent.ACTION_VIEW);
+			                i.setData(Uri.parse("market://search?q=pname:com.crashtestdummylimited.militarypaycalculatorfree"));
+			                startActivity(i);
+			        }
+				
+			}
+			
+		});
+		
+		
 		awardsBTN.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {

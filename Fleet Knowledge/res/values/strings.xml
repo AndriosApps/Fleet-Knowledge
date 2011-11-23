@@ -40,5 +40,7 @@
     <string name="title_history">History</string>
     <string name="title_abbreviations">Abbreviations</string>
     <string name="title_coc">Chain of Command</string>
+    <string name="title_paycalc">Military Pay</string>
+    <string name="title_acronyms">Acronyms</string>
    
     </resources>

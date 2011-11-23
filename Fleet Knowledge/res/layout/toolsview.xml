@@ -88,7 +88,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-
+
                 <Button
                     android:id="@+id/toolsViewPRTBTN"
                     android:layout_width="50dp"
@@ -138,14 +138,29 @@
             android:gravity="center" >
 
             <LinearLayout
-                android:id="@+id/linearLayout1"
+                android:id="@+id/LinearLayout05"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
-            </LinearLayout>
+
+                <Button
+                    android:id="@+id/toolsViewPayCalcBTN"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_paycalc"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_paycalc"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
+            </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="wrap_content"
@@ -153,7 +168,23 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/toolsViewAcronymsBTN"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_acronyms"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_acronyms"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
             </LinearLayout>
+
         </TableRow>
     </TableLayout>
 
