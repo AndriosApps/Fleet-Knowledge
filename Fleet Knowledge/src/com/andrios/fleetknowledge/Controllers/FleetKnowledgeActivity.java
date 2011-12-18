@@ -16,7 +16,7 @@ public class FleetKnowledgeActivity extends Activity {
 	
 
 	private static final int ACTIVITY_CREATE = 0;
-	private static final int ACTIVITY_EDIT = 1;
+	private static final boolean AMAZON = false;
 	
 	Button recruitersBTN;
 	Button recceBTN;
@@ -69,6 +69,11 @@ public class FleetKnowledgeActivity extends Activity {
 		musicBTN = (Button) findViewById(R.id.mainViewMusicBTN);
 		knowledgeBTN = (Button) findViewById(R.id.mainViewKnowledgeBTN);
 		toolsBTN = (Button) findViewById(R.id.mainViewToolsBTN);
+		
+		if(AMAZON){
+
+			toolsBTN.setVisibility(View.GONE);
+		}
 		aboutBTN = (Button) findViewById(R.id.mainViewAboutBTN);
 		
 	}

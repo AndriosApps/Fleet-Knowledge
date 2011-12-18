@@ -22,6 +22,8 @@ public class AboutActivity extends Activity {
 	
 	Button facebookBTN, twitterBTN, emailBTN, marketBTN;
 	GoogleAnalyticsTracker tracker;
+	private static final boolean AMAZON = false;
+	
 	
     /** Called when the activity is first created. */
     @Override
@@ -60,7 +62,13 @@ public class AboutActivity extends Activity {
 		facebookBTN = (Button) findViewById(R.id.aboutActivityFacebookBTN);
 		twitterBTN = (Button) findViewById(R.id.aboutActivityTwitterBTN);
 		emailBTN = (Button) findViewById(R.id.aboutActivityEmailBTN);
+
 		marketBTN = (Button) findViewById(R.id.aboutActivityMarketBTN);
+		if(AMAZON){
+			marketBTN.setVisibility(View.GONE);
+		}
+		
+		
 	}
 
 

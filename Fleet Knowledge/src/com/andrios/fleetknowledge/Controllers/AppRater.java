@@ -15,6 +15,8 @@ import android.widget.TextView;
 	public class AppRater {
 	    private final static String APP_TITLE = "Fleet Knowledge";
 	    private final static String APP_PNAME = "com.andrios.fleetknowledge";
+
+		private static final boolean AMAZON = false;
 	    
 	    private final static int DAYS_UNTIL_PROMPT = 3;
 	    private final static int LAUNCHES_UNTIL_PROMPT = 5;
@@ -66,7 +68,14 @@ import android.widget.TextView;
 	        b1.setText("Rate " + APP_TITLE);
 	        b1.setOnClickListener(new OnClickListener() {
 	            public void onClick(View v) {
-	                mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + APP_PNAME)));
+	            	if(AMAZON){
+	            		mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.amazon.com/gp/mas/dl/android?p=" + APP_PNAME)));
+		                
+	            	}else{
+	            		mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + APP_PNAME)));
+	            	}
+	             
+	            	
 	                if (editor != null) {
 	                    editor.putBoolean("dontshowagain", true);
 	                    editor.commit();

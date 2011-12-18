@@ -60,7 +60,9 @@ public class ToolsController extends Activity {
 		prtBTN = (Button) findViewById(R.id.toolsViewPRTBTN);
 		bcaBTN = (Button) findViewById(R.id.toolsViewBCABTN);
 		payCalcBTN = (Button) findViewById(R.id.toolsViewPayCalcBTN);
+		//payCalcBTN.setVisibility(View.GONE);
 		acronymsBTN = (Button) findViewById(R.id.toolsViewAcronymsBTN);
+		acronymsBTN.setVisibility(View.GONE);
 		
 	}
 
@@ -89,16 +91,28 @@ public class ToolsController extends Activity {
 		payCalcBTN.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
+				
+				
+				
 				try{
 					 Intent intent = new Intent("android.intent.action.MAIN");
-					    intent.setComponent(ComponentName.unflattenFromString("com.crashtestdummylimited.militarypaycalculatorfree/com.crashtestdummylimited.militarypaycalculatorfree.Splash"));
+					    intent.setComponent(ComponentName.unflattenFromString("com.crashtestdummylimited.militarypaycalculator/com.crashtestdummylimited.militarypaycalculator.Splash"));
 					    intent.addCategory("android.intent.category.LAUNCHER");
 					    startActivity(intent);
 
 			        }catch(Exception e){
-			                Intent i = new Intent(Intent.ACTION_VIEW);
-			                i.setData(Uri.parse("market://search?q=pname:com.crashtestdummylimited.militarypaycalculatorfree"));
-			                startActivity(i);
+			        	
+			        	try{
+							 Intent intent = new Intent("android.intent.action.MAIN");
+							    intent.setComponent(ComponentName.unflattenFromString("com.crashtestdummylimited.militarypaycalculatorfree/com.crashtestdummylimited.militarypaycalculatorfree.Splash"));
+							    intent.addCategory("android.intent.category.LAUNCHER");
+							    startActivity(intent);
+
+					        }catch(Exception e1){
+					                Intent i = new Intent(Intent.ACTION_VIEW);
+					                i.setData(Uri.parse("market://search?q=pname:com.crashtestdummylimited.militarypaycalculatorfree"));
+					                startActivity(i);
+					        }
 			        }
 				
 			}

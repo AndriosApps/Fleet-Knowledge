@@ -19,7 +19,7 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
     private static String DB_PATH = "/data/data/com.andrios.fleetknowledge/databases/";
  
     private static String DB_NAME = "fleetknowledgeapplicationdata";
-    private static int DB_VERSION = 2;
+    private static int DB_VERSION = 3;
     private SQLiteDatabase myDataBase;
     private SQLiteDatabase tempDataBase;  
  
@@ -96,7 +96,6 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
      * This is done by transfering bytestream.
      * */
     private void copyDataBase() throws IOException{
-    	System.out.println("COPY DATABASE");
     	//Open your local db as the input stream
     	InputStream myInput = myContext.getAssets().open(DB_NAME);
  
@@ -123,7 +122,6 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
     }
     
     private void duplicateDataBase() throws IOException{
-    	System.out.println("Duplicate DATABASE");
     	//Open your local db as the input stream
     	InputStream myInput = myContext.getAssets().open(DB_NAME);
  
@@ -183,9 +181,7 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
  
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		System.out.println("on Create");
 		db.setVersion(DB_VERSION);
-		System.out.println("DB VERSION: " + db.getVersion());
 		
 		firstRun = true;
 		
@@ -193,9 +189,7 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
  
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		System.out.println("Upgrade From :" + oldVersion + " to: " + newVersion);
-
-		System.out.println("DB VERSION: " + db.getVersion());
+		
 		if(oldVersion == 1 && !firstRun){
 			// Create a temp Database (With old database)
 			try {
@@ -278,8 +272,53 @@ public class AndriosDatabaseHelper extends SQLiteOpenHelper{
 		}
 		
 	
-			
-		// IF oldVersion == 2 && !firstRun	
+		// Update Ship Table Add LCS to Ship Table
+		if(oldVersion == 2 && !firstRun){
+			// Create a temp Database (With old database)
+						try {
+							duplicateDataBase();
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
+
+						
+						
+						openTempDataBase();
+						
+						
+						// SELECT * FROM tempDB.ships Table
+						Cursor c = tempDataBase.query("ships", new String[] {"_id", "type", "ship_class", "dimensions", "crew", "weapons", "performance", "propulsion", "aircraft", "ew", "sensors", "boats", "about", "image", "link" },  null, null, null, null, null);
+						c.moveToFirst();
+						
+						
+						db.delete("ships", null, null);
+
+					
+
+						while(c.isAfterLast() == false){
+							ContentValues values = new ContentValues();
+							values.put("type", c.getString(1));
+							values.put("ship_class", c.getString(2));
+							values.put("dimensions", c.getString(3));
+							values.put("crew", c.getString(4));
+							values.put("weapons", c.getString(5));
+							values.put("performance", c.getString(6));
+							values.put("propulsion", c.getString(7));
+							values.put("aircraft", c.getString(8));
+							values.put("ew", c.getString(9));
+							values.put("sensors", c.getString(10));
+							values.put("boats", c.getString(11));
+							values.put("about", c.getString(12));
+							values.put("image", c.getString(13));
+							values.put("link", c.getString(14));
+							
+							db.insert("ships", null, values);
+							c.moveToNext();
+						}
+						
+						db.setVersion(3);
+						tempDataBase.close();
+		}
 			
 	}
 	

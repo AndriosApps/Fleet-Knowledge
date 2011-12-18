@@ -175,13 +175,6 @@
                     android:layout_height="50dp"
                     android:background="@drawable/icon_acronyms"
                     android:text="@string/empty" />
-
-                <TextView
-                    android:id="@+id/TextView05"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/title_acronyms"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
             </LinearLayout>
 
